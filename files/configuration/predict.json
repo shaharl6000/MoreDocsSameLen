@@ -1,0 +1,10 @@
+{
+  "out_dir": "Prediction Path",
+  "run_name": "base",
+  "datasets_pickle_path": "Dataset Path",
+  "override": false,
+  "truncation_strategy": "max",
+  "max_num_tokens": null,
+  "batch_size": 2,
+  "temperature": 0.8
+}

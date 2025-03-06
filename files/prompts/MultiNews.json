@@ -1,0 +1,147 @@
+{
+  "prompts": [
+    {
+      "id": 0,
+      "instructions" : "In this task, you are presented with multiple news articles about related topics. Your job is to generate an extractive summary that integrates information from the provided articles. Your summary should be short and concise, that includes content only from the provided articles, avoiding any external data sources.",
+      "comments": ""
+    },
+	{
+      "id": 1,
+      "instructions" : "Please provide a brief, extractive summary by synthesizing only the key points from the articles provided. Focus on the main arguments and conclusions without incorporating any information from outside these texts. Keep your summary concise and directly related to the content of the documents.",
+      "comments": ""
+    },
+	{
+      "id": 2,
+      "instructions" : "Generate a concise extractive summary using only the information from the provided articles. Your summary should distill the most essential information, capturing the core insights without adding any external content. Aim for brevity and clarity in your summarization.",
+      "comments": ""
+    },
+	{
+      "id": 3,
+      "instructions" : "Please sift through the provided articles and distill their essence into a sharp, concise summary. Focus solely on the facts and key points within these texts, avoiding any embellishment or reference to external information. Your summary should read like a bullet-point list of the most critical insights.",
+      "comments": ""
+    },
+	{
+      "id": 4,
+      "instructions" : "You are presented with multiple news articles about related topics. Summarize the contents in a way that captures the key information in a narrative form, but strictly using the details mentioned in the provided documents. Keep it engaging yet brief.",
+      "comments": ""
+    },
+	{
+      "id": 6,
+      "instructions" : "Imagine you're preparing a brief for a decision-maker who has limited time. Summarize the provided documents by extracting only the most essential information. Present this in a clear, straightforward manner, focusing on the key facts and figures, and ensure that all content is directly sourced from the articles without external references.",
+      "comments": ""
+    },
+	{
+      "id": 7,
+      "instructions" : "Using only the details from the articles I've given you, craft a summary that distills the most important information. Avoid any interpretations or external data, and keep your summary short and direct. Emphasize the main arguments, data points, and conclusions from the documents.",
+      "comments": ""
+    },
+	{
+      "id": 8,
+      "instructions" : "Operate as an information synthesizer: Draw the essence from multiple articles, focusing solely on the information contained within them. Your summary should be a tight, focused digest of the articles, free from any influence of external data.",
+      "comments": ""
+    },
+	{
+      "id": 9,
+      "instructions" : "Scan through the provided articles and compile a summary that highlights only the most significant facts and figures, ensuring the exclusion of all external references. Aim for clarity and brevity.",
+      "comments": ""
+    },
+	{
+      "id": 10,
+      "instructions" : "Operate as an academic summarizer: Imagine you are creating a summary for an academic review. Extract and emphasize the most pertinent information, ensuring your summary remains true to the original texts and free of external content.",
+      "comments": ""
+    },
+	{
+      "id": 11,
+      "instructions" : "Condense the provided information into a compact summary that emphasizes the main points and crucial data from the documents. Exclude any external information to maintain the integrity of the sources.",
+      "comments": ""
+    },
+	{
+      "id": 12,
+      "instructions" : "From the provided articles, pull out the core messages and data points. Shape these into a brief, clear summary that directly reflects the content of the documents without any external additions.",
+      "comments": ""
+    },
+	{
+      "id": 13,
+      "instructions" : "Compile a concise summary from the news articles given, focusing only on the information contained within. Your summary should integrate the main points without adding any outside information.",
+      "comments": ""
+    },
+	{
+      "id": 14,
+      "instructions" : "Create a succinct extractive summary by focusing exclusively on the details provided in the articles. Avoid using any external sources and ensure the summary remains clear and to the point.",
+      "comments": ""
+    },
+	{
+      "id": 15,
+      "instructions" : "Produce a brief summary that distills the essential facts from the provided articles. Keep your summary strictly to the content presented in the documents, avoiding external influences.",
+      "comments": ""
+    },
+	{
+      "id": 16,
+      "instructions" : "Develop a concise extractive summary using only the information from the articles provided. Emphasize the main points and conclusions while avoiding the inclusion of any external data.",
+      "comments": ""
+    },
+	{
+      "id": 17,
+      "instructions" : "Prepare a short, integrated summary by synthesizing key points from the given news articles. Ensure that no external content is included and that the summary is clear and direct.",
+      "comments": ""
+    },
+	{
+      "id": 18,
+      "instructions" : "Your task is to distill the primary information from the provided articles into a concise summary. Make sure to exclude any external sources and focus strictly on the given texts.",
+      "comments": ""
+    },
+	{
+      "id": 19,
+      "instructions" : "Summarize the provided articles by extracting only the key information and conclusions. Your summary should be brief and must not incorporate any external data.",
+      "comments": ""
+    },
+	{
+      "id": 20,
+      "instructions" : "Generate a clear and brief extractive summary using just the information from the provided articles. Focus on distilling the essential points and data without referencing external content.",
+      "comments": ""
+    }
+  ],
+  "demonstrations": [
+    {
+      "id_train": 33239,
+      "documents": [
+        "The Iowa State Medical Examiner's announcement Thursday that Tibbetts death was a homicide resulting from multiple sharp force injuries is likely to fuel more outrage. We cannot allow these tragedies to continue. Former Republican House Speaker Newt Gingrich declared on Fox News that if Mollie Tibbetts is a household name by October, Democrats will be in deep trouble come Election Day. In the Tibbetts case, Cristhian Bahena Rivera, 24, was charged with first-degree murder Tuesday after the body of 20-year-old Tibbetts was found in a field east of her hometown, Brooklyn, Iowa. In a court filing ahead of Rivera's first court appearance on Wednesday, his lawyer, Allan Richards, sought a gag order claiming that the federal government was promoting the idea that his client was in the country illegally. Cristhian Rivera, 24, accused of killing University of Iowa student Mollie Tibbetts, is led from the courtroom after making his initial appearance on a charge of first-degree murder during at the Poweshiek County Courthouse in Montezuma, Iowa. And in an interview with NBC News on Thursday, Richards was evasive when asked for proof that Rivera was in the U.S. legally.",
+		"Rivera quickly accepted, tweeting that Patrick claimed he was effectively an accomplice to horrifying murder of Molly Tibbetts because I beg compassion & mercy for undocumented immigrants-How dare he make so false an allegation? He is fear-mongering. Tibbetts, disappeared in July. Cristhian Bahena Rivera, has been charged for her murder. U.S. Immigration and Customs Enforcement has said that Rivera was in the country illegally, but his attorney disputes that. Rivera is a Mexican citizen."
+      ],
+      "target":  "The Mollie Tibbetts murder continues to emerge as a flashpoint in the immigration debate, reports NBC News. The reason? US immigration officials say 24-year-old suspect Cristhian Bahena Rivera was in the country illegally, though his attorney continues to push back against that claim. Geraldo criticizes Fox: One of those criticizing Fox News for focusing so strongly on the immigration angle turns out to be one of its own hosts, Geraldo Rivera, reports the Washington Post. \"We, at this network, are putting that spin on this story,\" Counter-view: Texas Lt. Gov. Dan Patrick has been among those on the right blaming too-soft immigration policies for the murder. \"The CNNs, the MSNBCs, most of the print media in this country, and the Democrats, accomplices in the death of this young girl and the death of everyone else,\" he said on Fox."
+	},
+    {
+      "id_train": 8874,
+      "documents": [
+		"In a once abandoned Hershey chocolate factory in the small town of Smiths Falls, Ontario, the largest legal marijuana producer in the world grows, trims, processes, packages, and ships weed across the Great White North. In the fall of 2016, Canopy, which trades on the Toronto Stock Exchange under the ticker WEED, became the first company in the marijuana industry to achieve elusive unicorn status. Canadians have enjoyed the ability to possess and grow small amounts of weed for medical use. In 2014, the government began licensing companies like Canopy to produce mass amounts of marijuana for patients suffering from serious diseases. Linton wanted to create a vertically integrated company — one that grows marijuana in addition to processing it for oils, gel capsules, and other products and packaging it for shipment — because it would give him better control over quality and bring down costs.",
+		"On Bay Street, Toronto’s equivalent of Wall Street, you can now buy weed. Rather, make that WEED. Amid what it says is a growing acceptance of Canada’s burgeoning medical-marijuana industry, Canopy Growth Corp. switched to the new four-letter stock ticker on the Toronto Stock Exchange Wednesday. Canopy already exports marijuana products to Germany and Brazil. “We’re thrilled to be marketing WEED on Bay Street,” Chief Executive Officer Bruce Linton said in a statement.",
+		"Canopy Growth Corp. jumped to a record high, and other Canadian cannabis growers gained, after unveiling a line of marijuana products for the domestic market in a partnership with rapper Snoop Dogg. Canopy became the first marijuana producer to trade on a major North American stock exchange when it graduated to the Toronto Stock Exchange in July. Canopy CEO Bruce Linton has ambitious expansion plans for the company as it grows internationally and Canada inches closer to full legalization of the drug that’s now allowed for medical use. The government of Prime Minister Justin Trudeau, who campaigned on a legalization pledge, is due to receive a report in November recommending how Canada may move forward."
+      ],
+      "target": "Factory in a small town in Ontario once spewed out Hershey's chocolate, and now it's home to the world's largest legal marijuana producer, which supplies pot across Canada and exports to Germany and Brazil. Canopy Growth—found on the Toronto Stock Exchange. The company supply pot to almost half of Canadian medical marijuana patients, and also grows, processes, and packages the product. With control over its supply chain, Canopy Growth is able to process everything from oils to gel capsules."
+	},
+    {
+      "id_train": 38373,
+      "documents": [
+		"Darden Restaurants, owner of the Italian restaurant chain Olive Garden, says its unlimited breadsticks and salad dressings are working out just fine with consumers. The casual-dining restaurant operator is on the defensive after investor Starboard Value LP last week disclosed nearly 300-page slide presentation that detailed a potential turnaround plan for Darden’s Olive Garden chain. Among the complaints: Olive Garden was serving too many breadsticks, adding too much dressing to its salads, and not serving enough alcohol. Among the most egregious complaints: Starboard lamented Olive Garden wasn’t adding salt to the water used to cook the pasta, asking How does the largest Italian dining concept in the world not salt the water for pasta? Darden fired back this week, saying in a 24-page slide presentation that Starboard’s suggestions are not based on reality.",
+		"Olive Garden is defending its practice of giving customers as many breadsticks as they want, saying the policy conveys Italian generosity. The remark is part of a response by the chain's parent company, Darden Restaurants Inc., to a nearly 300-page criticism released by hedge fund Starboard Value last week. Starboard took Olive Garden and its management to task for a variety of issues, including its liberal distribution of breadsticks, its failure to salt the water used to boil its pasta, and even the length of the asparagus it serves. Darden's 24-page response states that the company is already implementing a variety of strategies to improve Olive Garden's performance. Starboard is lobbying to gain control of Darden's board of directors at the company's annual meeting which is based in Orlando, Florida, has struggled to boost sales at Olive Garden with the growing popularity of chains such as Chipotle. Under pressure to boost results, Darden recently sold off Red Lobster, which was doing even worse than Olive Garden. As for its breadsticks, Starboard said last week that Olive Garden was being wasteful because servers weren't sticking to the policy of providing one breadstick per customer, plus an extra for the table. "
+      ],
+      "target": "Olive Garden has fired back in the battle of the breadsticks. The Florida-based chain's parent company says the unlimited breadstick policy—one of many things criticized by hedge fund Starboard Value—is an example of Italian generosity. In its response to Starboard's 300-page criticism, Darden Restaurants says the salads Starboard slams for being overfilled and overdressed are a big hit that inspires loyalty in customers. The 24-page report says a major menu revamp is underway and things like ordering via tabletop tablets are in the works, although it doesn't address some of Starboard's criticisms."
+	},
+    {
+      "id_train": 33055,
+      "documents": [
+		"Nearly 300 aviation security officers are suing the city of Chicago and the state of Illinois, asserting that they were wrongfully stripped of their law enforcement status following the widely publicized incident involving Dr. David Dao being forcibly removed from a United Airlines flight in April 2017. These officers, recognized as law enforcement since 1993 and trained at the Chicago Police Academy or the Cook County Sheriff’s Training Academy, lost their privileges due to political pressure after the incident. The city’s Aviation Commissioner and the state board declared that aviation officers were no longer considered law enforcement at airports. The officers' lawsuit contends that removing their law enforcement status unfairly impacts their work history and future job opportunities.",
+		"James Long, a former Chicago aviation security officer, is suing Chicago's Department of Aviation (CDA), its commissioner, and the city. He claims he was not properly trained on the use of force, which he argues contributed to the incident involving Dr. David Dao. Dr. Dao was forcibly removed from a United Airlines flight, resulting in significant injuries, and later settled with the airline. The incident led to a policy change by United Airlines regarding the allocation of seats to crew members. But for the CDA's negligence and failure to train Long how to respond to an escalating situation with an Airline Passenger, he would not have acted in the manner he did, which resulted in his termination, the complaint says, according to newspaper"
+      ],
+      "target": "The Chicago aviation security officer who dragged a physician off a United Airlines flight last year is suing the airline and the city, claiming that their negligence led to his firing. In the lawsuit, James Long argues that United should have known that calling security to remove David Dao, 69, from the overbooked flight would require the use of physical force. The complaint also states that although Long completed five months of training as a police recruit, the Chicago Department of Aviation failed to provide training on the level of force continuum. With that training. In a separate lawsuit, some 300 aviation security officers are suing Chicago and the state of Illinois, complaining that they were stripped of their law enforcement officer status after the Dao incident, the Chicago Tribune reports. The officers—who completed police or sheriff's department training and were sworn in as law enforcement officers—argue that while the state has the right to strip the agency of its policing powers, their work history as law enforcement officers shouldn't be expunged."
+    },
+    {
+      "id_train": 10423,
+      "documents": [
+        "Local and international human rights groups have criticized Presidential Spokesperson Harry Roque for claiming they are manipulated by drug lords to oppose the Duterte administration's drug policies. Human Rights Watch described these allegations as government intimidation tactics meant to undermine Philippine human rights activists who challenge the administration's approach to the rule of law and potential crimes against humanity. Roque defended his statements, suggesting that such groups should not overreact and politicize the issue for media attention. Meanwhile, the local group Karapatan accused the administration of fabricating stories to blame human rights organizations for its failures in addressing the drug problem and for tarnishing the nation’s reputation. They suggest that these accusations serve to justify attacks on activists or to dodge accountability under domestic and international rights laws. Despite official figures indicating over 4000 deaths in drug operations, human rights organizations estimate the toll could be as high as 13,000.",
+        "Philippine law enforcement agencies still have no proof yet on allegations made by two government officials that human rights groups may have become the “unwitting tools” of drug lords, police and drug enforcement agency officials said on Tuesday. Carreon said more than 123,000 drug suspects had been arrested, which he said showed anti-drugs operations were not about killings. He said law enforcement agencies welcomed any criticism from rights groups and allowed them to observe anti-drug operations to prove that everything was done according to the rule of law. Duterte’s spokesman and foreign secretary did not present any evidence when they told reporters drug lords were using human rights groups to undermine the policy, statements against which the Human Rights Watch protested and said were “shameful” and risked provoking violence. The anti-narcotics campaign has raised international alarm and drawn criticism from some U.N. representatives."
+      ],
+      "target": "Human rights groups in the Philippines are contending with government claims that they are inadvertently assisting drug lords by highlighting the increasing number of deaths in President Rodrigo Duterte's drug war. Following a particularly violent week where 13 people were killed in one night, presidential spokesman Harry Roque accused these groups of hindering the government's efforts. This aligns with earlier statements from Foreign Secretary Alan Cayetano, who criticized the motives of these groups. Despite official reports of around 4,100 deaths in police shootouts and 124000 arrests since June 2016, human rights organizations argue that the actual death toll is significantly higher and that the government's accusations aim to diminish their credibility and ignore global criticism of Duterte's policies. The International Criminal Court is investigating these policies as potential crimes against humanity. Human Rights Watch described Roque's comments as dangerously misleading, and local group Karapatan criticized the government for fabricating stories to malign them."
+    }
+  ]
+}

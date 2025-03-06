@@ -1,0 +1,185 @@
+{
+  "prompts": [
+    {
+      "id": 0,
+      "instructions": "In this task you are presented with multiple documents that are related to the same topic. In each document, each mention of an entity or event is enclosed with square brackets, followed by the mention's unique id. That is: '[some mention](id)'. Your task is to identify and cluster together mentions that are coreferring with each other, i.e., mentions that mark the same entity or event. output the list of clusters, where each cluster is a list of ids of coreferring mentions. For example, if you think that mentions (1) and (2) refer to the same entity, and mentions (3) and (4) refer to the same entity, but these two entities are different, you should output: [[1, 2], [3, 4]].",
+      "comments": ""
+    },
+	{
+      "id": 1,
+      "instructions" : "Given a set of documents related to the same topic, each containing entities or events marked with unique identifiers in the format '[some mention](id)', your task is to analyze these documents and identify mentions that refer to the same entity or event. Once identified, group these mentions into clusters, where each cluster contains the ids of mentions that are coreferential. Output the clusters in the following format: a list of lists, where each inner list contains the ids of coreferring mentions. For instance, if mentions (1) and (2) are coreferential, and mentions (3) and (4) are coreferential, but refer to different entities, the output should be: [[1, 2], [3, 4]]. Please process the input and produce the correct clusters based on coreference.",
+      "comments": ""
+    },
+	{
+      "id": 2,
+      "instructions" : "Your task is to process a set of documents, each discussing a similar topic and containing marked mentions of entities or events in the format '[some mention](id)'. Identify mentions that refer to the same entity or event and group these ids into clusters. Each cluster should consist of ids that belong to coreferential mentions. Output these clusters in a nested list format, for example, if mentions tagged as (1) and (2) are coreferential, and (3) and (4) are as well, but separate from the first group, your output should look like: [[1, 2], [3, 4]].",
+      "comments": ""
+    },
+	{
+      "id": 3,
+      "instructions" : "Examine several documents linked by a common theme, noting that each mention of an entity or event within these documents is denoted by '[some mention](id)'. Your objective is to find and group ids of mentions that correspond to the same entity or event into clusters. The desired output format is a list of lists, where each sublist contains ids of mentions that are coreferential. For example, an appropriate output for coreferential mentions (1) and (2), and another pair (3) and (4), would be [[1, 2], [3, 4]].",
+      "comments": ""
+    },
+	{
+      "id": 4,
+      "instructions" : "Within multiple documents on a similar subject, each entity or event mention is bracketed and tagged with an id in the format '[some mention](id)'. Your role is to ascertain which mentions refer to the same entity or event, grouping these ids into clusters. Each cluster will be a list containing the ids of mentions that are coreferential. For instance, if you determine that (1) and (2), as well as (3) and (4), refer to distinct entities, you should produce the output as: [[1, 2], [3, 4]].",
+      "comments": ""
+    },
+	{
+      "id": 6,
+      "instructions" : "Analyze a series of documents that discuss the same topic where entities and events are noted as '[some mention](id)'. Group mentions that refer to the same entity or event into clusters by their ids. Each cluster should be presented as a list of these ids, such as [[1, 2], [3, 4]], indicating coreference between the mentions within each list.",
+      "comments": ""
+    },
+	{
+      "id": 7,
+      "instructions" : "Review a collection of documents with related topics, identifying and clustering ids of entity and event mentions, denoted as '[some mention](id)'. Mentions that are coreferential should be grouped together. Format your output as a series of lists, each containing ids of mentions that reference the same entity or event, e.g., [[1, 2], [3, 4]]",
+      "comments": ""
+    },
+	{
+      "id": 8,
+      "instructions" : "Given multiple documents related by a common theme, each containing marked mentions of entities or events as '[some mention](id)', identify which mentions refer to the same entity or event and cluster these mentions' ids together. Your objective is to find and group ids of mentions that correspond to the same entity or event into clusters. The desired output format is a list of lists, where each sublist contains ids of mentions that are coreferential. For example, an appropriate output for coreferential mentions (1) and (2), and another pair (3) and (4), would be [[1, 2], [3, 4]].",
+      "comments": ""
+    },
+	{
+      "id": 9,
+      "instructions" : "Given a collection of documents on the same topic, identify mentions of entities or events marked as '[some mention](id)'. Your task is to group ids of mentions that refer to the same entity or event into clusters. Output these clusters as lists of ids, each representing a set of coreferential mentions. For example, if you find that mentions (1) and (2) refer to the same entity, and (3) and (4) refer to another, output should be: [[1, 2], [3, 4]].",
+      "comments": ""
+    },
+	{
+      "id": 10,
+      "instructions" : "Analyze a set of documents that discuss a unified topic, where each entity or event is uniquely identified by '[some mention](id)'. Group together the ids of mentions that are coreferential. Present your findings as a list of lists, where each sublist contains ids of mentions referring to the same entity or event, e.g., [[1, 2], [3, 4]]. Ensure accuracy in identifying and clustering these mentions.",
+      "comments": ""
+    },
+	{
+      "id": 11,
+      "instructions" : "Review documents related by a common theme, each containing marked mentions of entities or events in the format '[some mention](id)'. Determine which mentions refer to the same entity or event and cluster their ids accordingly. Output these clusters as nested lists, where each list contains ids of coreferential mentions, such as [[1, 2], [3, 4]]. This task requires precise identification and clustering based on coreference.",
+      "comments": ""
+    },
+	{
+      "id": 12,
+      "instructions" : "Your challenge is to navigate through multiple documents related by a common topic, identifying mentions of entities or events enclosed as '[some mention](id)'. Group these mentions by ids when they refer to the same entity or event. Present your clusters as lists of ids that show coreference, for instance, [[1, 2], [3, 4]]. This task requires keen attention to detail and accuracy in identifying connections",
+      "comments": ""
+    },
+	{
+      "id": 13,
+      "instructions" : "Act as a data detective and delve into several documents, each marked by similar themes and containing entities or events tagged as '[some mention](id)'. Your mission is to uncover which mentions are coreferential and cluster their ids accordingly. Your findings should be reported as lists of ids grouped by coreference, like [[1, 2], [3, 4]].",
+      "comments": ""
+    },
+	{
+      "id": 14,
+      "instructions" : "Task: Analyze a collection of thematic documents to identify and cluster mentions of entities or events, formatted as '[some mention](id)', that refer to the same concept. Your output should clearly display clusters of ids representing coreferential mentions, such as [[1, 2], [3, 4]], demonstrating your ability to discern and link related information.",
+      "comments": ""
+    },
+	{
+      "id": 15,
+      "instructions" : "In this detailed analysis task, you are provided with multiple documents, each discussing a similar theme. Within these documents, mentions of entities or events are specifically highlighted and labeled with unique identifiers in the format 'some mention](id)'. Your primary objective is to meticulously identify which of these mentions refer to the same real-world entity or event, and then systematically group together their corresponding ids into clusters. Each cluster should exclusively contain ids of mentions that are coreferential. For clarity in your output, format your results into a list of these clusters, where each sublist represents a distinct group of coreferential mentions. For instance, if your analysis concludes that mentions (1) and (2) are about the same entity, and mentions (3) and (4) about another distinct entity, your output should be formatted as: [[1, 2], [3, 4]]. This task requires precise attention to detail and analytical rigor to ensure accuracy in the clustering process.",
+      "comments": ""
+    },
+	{
+      "id": 16,
+      "instructions" : "Examine several documents on a unified topic, noting each mention of an entity or event as '[some mention](id)'. Group mentions by ids that refer to the same entity or event. Output these clusters in a format of nested lists, with each list containing ids of coreferential mentions, like [[1, 2], [3, 4]].",
+      "comments": ""
+    },
+	{
+      "id": 17,
+      "instructions" : "In this comprehensive task, you are faced with an array of documents tied by a common thematic element. Each document features various mentions of entities or events, each enclosed within square brackets and followed by a unique identification number in the format '[some mention](id)'. It is your responsibility to sift through these mentions, discerning which ones are references to the same entity or event across different texts. Upon identifying these coreferential mentions, you are to organize and cluster their ids into coherent groups. The final output should be a structured list of these clusters, with each cluster formatted as a list containing ids of mentions that you have determined to be about the same entity or event. For example, if you deduce that mentions (1) and (2) discuss one entity, and mentions (3) and (4) another, your result should be presented as: [[1, 2], [3, 4]]. This task demands a high level of accuracy and a methodical approach to ensure that each cluster is correctly assembled based on coreference analysis.",
+      "comments": ""
+    },
+	{
+      "id": 18,
+      "instructions" : "Within a group of related documents, each mention of an entity or event is uniquely identified in the format '[some mention](id)'. Your objective is to examine these documents and cluster the ids of mentions that are coreferential, i.e., refer to the same entity or event. The output should be a list of lists, where each sublist contains the ids of mentions that are grouped together based on coreference. For example, if mentions (1) and (2) are about the same entity, and (3) and (4) are about another, then the output should look like: [[1, 2], [3, 4]].",
+      "comments": ""
+    },
+	{
+      "id": 19,
+      "instructions" : "Engage in a task where you need to sift through several documents that deal with similar topics, noting that each entity or event mention is tagged in the format '[some mention](id)'. Identify and group mentions that refer to the same entity or event into clusters by their ids. Produce an output that consists of lists, where each list is a cluster of ids representing coreferential mentions. For instance, if (1) and (2) are deemed coreferential, as are (3) and (4), then your output should be structured as: [[1, 2], [3, 4]].",
+      "comments": ""
+    },
+	{
+      "id": 20,
+      "instructions" : "Your task involves processing a set of documents on a common subject, where each document includes mentions of entities or events marked by '[some mention](id)'. Your role is to determine which mentions refer to the same entity or event and cluster their ids together. The expected output format is a series of nested lists, with each list containing ids of coreferential mentions. For example, if mentions (1) and (2) are about the same entity, and (3) and (4) are about another, organize your output as: [[1, 2], [3, 4]].",
+      "comments": ""
+    }
+  ],
+  "demonstrations": [
+    {
+      "topic_id_train": 10,
+      "documents": [
+        "Red Sox [extend](3) [offer](21) to Teixeira Boston reportedly [looks](57) to [ink](49) free - agent slugger for eight years",
+        "Angels general manager Tony Reagins [confirmed](69) to the Los Angeles Times that he has [made](28) an eight-year [offer](18) to free agent first baseman Mark Teixeira .",
+        "The Los Angeles Angels [made](42) an eight-year [offer](41) to first baseman Mark Teixeira during [winter meetings](19) in Las Vegas .",
+        "Lynch [reported](0) the Red Sox team of owner John Henry , COO Larry Lucchino and General Manager Theo Epstein [offered](4) Teixeira , 28 , an eight - year deal worth $184 million or $23 million per season .",
+        "According to this L.A. Times story ( which [credits](60) the team-owned flagship radio station ) , the Angels have [made](37) an eight-year [offer](45) to free agent first baseman Mark Teixeira .",
+        "Red Sox owner John Henry has [said](8) , in so many words , that his team will not [sign](25) Mark Teixeira .",
+        "The Angels have [offered](39) an eight-year contract to Mark Teixeira , general manager Tony Reagins [said](55) Friday night .",
+        "Herald : Sox [Make](75) [Offer](7) To Teixeira ( 8 Years ? )",
+        "Meanwhile , according to the Newsday , Teixeira still has an eight - year [offer](30) on the table from the Red Sox , [worth](51) roughly $22 million per season ."
+      ],
+      "target": [
+        [25], [75, 3], [28, 37, 42], [8], [57], [49], [0], [60], [4, 7, 30, 21], [19], [55, 69], [45, 39, 41, 18], [51]
+      ]
+    },
+    {
+      "topic_id_train": 4,
+      "documents": [
+        "Bettie Page , the 1950s pin-up model who helped [set the stage](36) for the 1960s sexual [revolution](21) , has [died](72) .",
+        "Yesterday in Los Angeles , pin-up icon Bettie Page [succumbed](16) to complications from a [heart attack](61) suffered almost three weeks ago .",
+        "Pinup icon Bettie Page [died](102) Thursday evening at a hospital in Los Angeles after having [suffered](88) a [heart attack](113) on Dec. 2 and [spending](99) time on life support , according to her official site .",
+        "Esther Williams , who [swam](89) to [stardom](77) in the 1940's , [dies](94) at 91",
+        "Esther Williams , swimming champion , actress , and pin - up icon , has [died](33) . She was 91 . Williams , 91 , [passed](14) away early Thursday in her [sleep](58) , [according to](25) her publicist ."
+      ],
+      "target": [
+        [25], [94, 14, 33], [77], [36], [58], [99], [88], [21], [89], [113, 61], [16, 102, 72]
+      ]
+    },
+    {
+      "topic_id_train": 14,
+      "documents": [
+        "A HUGE [fire](45) has almost totally [destroyed](80) a Waitrose store in Banstead .",
+        "Residents [evacuated](58) from their homes after a huge [fire](65) at a Waitrose store in Banstead on Friday night have been [allowed](72) to [return](3) to their homes .",
+        "Wellington supermarket [fire](63) A large [fire](22) has [destroyed](0) much of a supermarket in Somerset .",
+        "Fire and police units are still at the scene of a [fire](79) which [gutted](46) a Waitrose supermarket in Surrey .",
+        "A Waitrose store was [reduced](70) to ruins after a [blaze](60) being [treated](33) by police as `` potentially suspicious '' .",
+        "A [fire](8) that [ripped](41) through a Waitrose store in Surrey is being [treated](52) as `` potentially suspicious '' , police [said](16) .",
+        "Police are [treating](71) a [fire](15) which has [destroyed](27) a Waitrose supermarket in Banstead in Surrey as `` potentially suspicious '' .",
+        "A Waitrose supermarket in Surrey has been [destroyed](51) in a [fire](47) .",
+        "Waitrose in Wellington [catches](69) [fire](40)"
+      ],
+      "target": [
+        [47, 15, 8, 65, 45, 79, 60], [16], [3], [58], [72], [51, 70, 80, 46, 41, 27], [69], [0], [71, 33, 52],
+        [22, 63, 50]
+      ]
+
+    },
+    {
+      "topic_id_train": 16,
+      "documents": [
+        "Two possible gang members are under [arrest](79) for the assassination-style [murder](22) of a Los Angeles County sheriff 's deputy outside his house in a gang-plagued section of the city last summer , police [said](40) Saturday .",
+        "Sheriff ’ s Deputy [Shot](6) and [Killed](69) June 24 , 2005 A 35 - year - old sheriff ’ s deputy [working](8) with an anti - gang unit was [killed](28) Friday when he [knocked](44) on the door of a home and someone [shot](60) him in the head , authorities [said](2) .",
+        "Jose Luis Orozco [showed](10) almost no [emotion](32) throughout the three - week [trial](53) in which he was [convicted](35) of the 2005 [murder](48) of Los Angeles County Sheriff's Deputy Jerry Ortiz .",
+        "Judge [sentences](70) Orozco to [death](27)",
+        "Two possible gang members were [arrested](81) in the fatal [shooting](72) of a sheriff 's deputy who was [murdered](0) as he was [getting ready](46) to go to [work](20) , officials [announced](55) Saturday .",
+        "The gang member [shot](13) Jerry Ortiz outside a Hawaiian Gardens building in 2005 ."
+      ],
+      "target": [
+        [44], [27], [40], [48, 28, 69], [72], [20], [55], [46], [70, 35], [6, 13, 60], [8], [10], [32], [53], [22, 0],
+        [81, 79], [2]]
+    },
+    {
+      "topic_id_train": 11,
+      "documents": [
+        "Turkmenistan 's voters [are going to the polls](9) in parliamentary [elections](18) [portrayed](47) by the government as a [step](4) towards [democracy](19) in the gas-rich Central Asian nation .",
+        "Electoral districts [established](26) in Turkmenistan due to parliamentary [elections](35)",
+        "Voters in Turkmenistan [cast](52) ballots Sunday in a parliamentary [election](58) [hailed](17) by the government as an exercise in [democracy](49) but [dismissed](40) by critics as a sham .",
+        "'The government of Turkmenistan [said](70) 90 per cent of eligible voters had [participated](1) in parliamentary [elections](14) Sunday , despite [boycotts](54) from opposition groups .'",
+        "Turkeminstan's CEC [plans](13) to [hold](22) [elections](61) on December 15 2013 .",
+        "Voters in Turkmenistan began to [cast](59) their ballots at 8 : 00 am local time ( 0300 GMT ) on Sunday in the country 's fourth parliamentary [election](3) , [said](31) reports from Ashgabat , Turkmenistan 's capital .",
+        "The 4th parliamentary [election](48) of Turkmenistan [ended](56) Sunday evening as scheduled , [said](60) reports from Ashgabat , Turkmenistan 's capital ."
+      ],
+      "target": [
+        [60, 31], [61, 35], [19, 49], [58, 18, 3, 14, 48], [56], [17], [40], [26], [22], [13], [47], [4], [54], [70],
+        [9, 1, 59, 52]
+      ]
+    }
+  ]
+}

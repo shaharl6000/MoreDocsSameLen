@@ -1,0 +1,334 @@
+{
+    "prompts": [
+        {
+            "id": 0,
+            "instructions" : "In this task, you are presented with eight reviews, where some parts are \"highlighted\" (namely, there are {HS} and {HE} tokens before and after each such span). Your job is to generate a summary that covers all and only the \"highlighted\" spans.",
+            "comments": "from original dataset"
+        },
+        {
+            "id": 1,
+            "instructions": "You are presented with eight reviews, each containing highlighted sections marked by {HS} and {HE} tokens. Your task is to carefully read through the reviews and generate a comprehensive summary that accurately captures all the content within the highlighted spans.",
+            "comments": "Encourages a thorough review of highlighted content and focuses on accuracy."
+        },
+        {
+            "id": 2,
+            "instructions": "Examine the eight reviews provided, noting the highlighted sections indicated by the {HS} and {HE} tokens. Construct a summary that encapsulates the key points and details found within these highlighted spans, ensuring a complete and concise overview.",
+            "comments": "Promotes attention to detail in summarizing highlighted sections."
+        },
+        {
+            "id": 3,
+            "instructions": "Read through the eight reviews and identify the highlighted content demarcated by {HS} and {HE}. Your task is to create a thorough summary that includes all the essential points and insights from the highlighted sections.",
+            "comments": "Instructs careful analysis of the highlighted parts and summarization."
+        },
+        {
+            "id": 4,
+            "instructions": "Review the eight provided reviews and focus on the content between the {HS} and {HE} markers. Produce a summary that effectively captures the main ideas and sentiments expressed within these highlighted spans.",
+            "comments": "Task requires effective summary of key points from highlighted sections."
+
+        },
+        {
+            "id": 5,
+            "instructions": "In this task, read the eight reviews and pay special attention to the highlighted sections marked with {HS} and {HE}. Generate a summary that encompasses the insights and viewpoints found in these highlighted portions.",
+            "comments": "Task emphasizes thoroughness and accuracy in summarizing highlighted content."
+        },
+        {
+            "id": 6,
+            "instructions": "You will be presented with eight reviews that contain highlighted spans marked by {HS} and {HE}. Your goal is to produce a summary that covers all the important aspects and main points from these highlighted sections.",
+            "comments": "Task instructs summarizing key aspects from highlighted content."
+        },
+        {
+            "id": 7,
+            "instructions": "Analyze the eight reviews and concentrate on the highlighted sections marked with {HS} and {HE}. Create a summary that includes all the relevant points and perspectives found within these highlighted spans.",
+            "comments": "Instructs detailed focus on summarizing content from highlighted areas."
+        },
+        {
+            "id": 8,
+            "instructions": "From the eight reviews, focus on the highlighted spans marked with {HS} and {HE}. Your task is to generate a summary that encapsulates all the critical details and information found within these highlighted sections.",
+            "comments": "Encourages capturing all relevant details from highlighted sections."
+        },
+        {
+            "id": 9,
+            "instructions": "Read through the eight reviews and identify the text marked by {HS} and {HE}. Create a summary that accurately represents all the key points and sentiments found within these highlighted portions.",
+            "comments": "Task requires detailed analysis and summary of highlighted content."
+        },
+        {
+            "id": 10,
+            "instructions": "You are provided with eight reviews that contain highlighted sections marked with {HS} and {HE}. Generate a summary that includes all the main points, observations, and opinions from these highlighted spans.",
+            "comments": "Task focuses on summarizing main ideas from highlighted sections."
+        },
+        {
+            "id": 11,
+            "instructions": "Examine the eight reviews and focus on the text enclosed by the {HS} and {HE} markers. Produce a summary that presents a comprehensive overview of the important points and insights found within these highlighted areas.",
+            "comments": "Promotes creating a comprehensive summary of highlighted content."
+        },
+        {
+            "id": 12,
+            "instructions": "You will read through eight reviews that contain highlighted sections marked by {HS} and {HE}. Your goal is to create a summary that captures the key points and themes found within these highlighted spans.",
+            "comments": "Instructions emphasize capturing key themes and points in the summary."
+        },
+        {
+            "id": 13,
+            "instructions": "Read the eight reviews carefully and focus on the text within the {HS} and {HE} tokens. Your task is to create a detailed summary that covers all the important aspects found in these highlighted sections.",
+            "comments": "Task requires a detailed focus on summarizing highlighted content."
+        },
+        {
+            "id": 14,
+            "instructions": "Examine the eight provided reviews and focus on the sections marked by {HS} and {HE}. Generate a summary that effectively represents the main points and ideas from these highlighted spans.",
+            "comments": "Encourages effective summarization of main ideas from highlighted content."
+        },
+        {
+            "id": 15,
+            "instructions": "You have eight reviews that contain highlighted spans marked by {HS} and {HE}. Create a summary that includes all the key details, observations, and insights found within these highlighted areas.",
+            "comments": "Task focuses on summarizing key details from highlighted sections."
+        },
+        {
+            "id": 16,
+            "instructions": "Read the eight reviews and concentrate on the highlighted sections marked by {HS} and {HE}. Your task is to create a summary that encapsulates the most important aspects found in these highlighted spans.",
+            "comments": "Instructions focus on summarizing the most important aspects of highlighted content."
+        },
+        {
+            "id": 17,
+            "instructions": "Examine the eight reviews and focus on the highlighted sections marked with {HS} and {HE}. Produce a summary that effectively captures all the critical details and main ideas from these highlighted spans.",
+            "comments": "Instructions promote thorough summarization of critical details from highlighted content."
+        },
+        {
+            "id": 18,
+            "instructions": "From the eight reviews, focus on the highlighted sections marked by {HS} and {HE}. Your task is to create a summary that encompasses all the essential points and insights found within these highlighted spans.",
+            "comments": "Task emphasizes summarizing essential points and insights from highlighted content."
+        },
+        {
+            "id": 19,
+            "instructions": "Read through the eight reviews and concentrate on the text bracketed by {HS} and {HE}. Generate a summary that captures the key ideas and observations found within these highlighted portions.",
+            "comments": "Task focuses on capturing key ideas and observations in the summary."
+        }
+    ],
+    "highlight_start":"{HS}",
+    "highlight_end":"{HE}",
+    "prompt_structure":"{INST}\n\n{H_REV}\n\nAnswer: The highlighted spans are:\n{HIGHLIGHTS}{COT}\n\nSo, the answer is: {A}",
+    "cot_structure":"\n\nThe highlighted spans are combined as follows:\n{COT_STEPS}",
+    "demo_sep": "\n\n\n",
+    "demos": [
+        {
+            "id": 0,
+            "reviews" : {
+                "review_0" : "The Residence Inn was great. Very central to lots of things but the people working there were what made the stay so enjoybale. {HS} Leyla at the front desk was so helpful{HE} in guiding us as to what to do and never without a big smile on her face. {HS} Franco at the valet was so friendly and helpful{HE} and since he was our very frist imprerssion of the Residence Inn it certainly was a good one. The breakfast was great but {HS} again the staff was wonderful. Kemika (sp) was so helpful and warm{HE} and it certainly made for an enjoyable breakfast time with our family. The rooms were clean and modern. The parking charge was the only downfall at $35 a day. It would be better to include it in the room price.",
+                "review_1" : "{HS} I was treated very horribly by the staff at this hotel{HE}, I would not recommend it to anyone no matter who you are. Maybe its because they are new they don't know how to treat guests but I can tell you this much they ruined my entire stay and never bothered to do anything about it,until I took action. I am disappointed that a Marriott would act like this, but atleast now you know that they are not capable of effectively dealing with problem resolution during your stay.",
+                "review_2" : "I have stayed at this hotel numerous times since it opened. I love the location, and the kitchenette in the rooms makes any hotel stay so much more comfortable. Of course, one can never complain about complementary breakfast! {HS} The staff has{HE} always {HS} been{HE} super friendly and {HS} helpful{HE}, from the maintenance and housekeeping staff, to the front desk and valet. Every time I go to Toronto I look forward to staying there!",
+                "review_3" : "We stayed in the residence inn over a weekend. After a Long drive from chicago we were assigned a room on a high floor as requested with {HS} a lovely view of the cn tower{HE}! The hotel is in the perfect spot for exploring the surrounding area and has lots of pubs and restaurants in close vicinity also! Book it, you won't be dissapointed :)",
+                "review_4" : "Excellent location. {HS} 5 Minutes walking distance to{HE} both the Rogers Centre and {HS} CN Tower{HE}. Also walking distance to all the nightclubs in the entertainment district. Rooms are brand new and kept spotlessly clean. This property is also reasonably priced with the AAA discount. I can't think of a single negative thing to say about this property.",
+                "review_5" : "A thank you party for the clients on our first night, {HS} staff very polite{HE} and room very clean. {HS} Close to the CN tower{HE} and King street, well located. The fact that you have a complete kitchen and a very nice breakfast included also are some of the reasons to go back to this hotel.",
+                "review_6" : "Stayed for 3 nights in August. Excellent location next to the CN Tower. Lovely room with full kitchen - handy with young children - excellent deli round the corner which made preparing meals easier etc. - less stressful than taking youngsters to restaurants. Absolutely superb breakfast each morning. {HS} Courteous staff throughout{HE}.",
+                "review_7" : "I have been staying in Residence Inn for the ast 5 months and its by far the best extended stay hotel I have ever visited. Excelent location,Food and Guest Services"
+            },
+            "output" : "The staff have been okay at this hotel and sometimes were great and helpful but at times they wouldn't treat guests incredibly well. The hotel is also located near to CN Tower.",
+            "highlights_output_alignment" : [
+                {
+                    "alignments" : {
+                        "review_0" : [0,1,2],
+                        "review_1" : [0],
+                        "review_2" : [0,1,2],
+                        "review_3" : [],
+                        "review_4" : [],
+                        "review_5" : [0],
+                        "review_6" : [0],
+                        "review_7" : []
+                    },
+                    "output_sentence" : "The staff have been okay at this hotel and sometimes were great and helpful but at times they wouldn't treat guests incredibly well."
+                },
+                {
+                    "alignments" : {
+                        "review_0" : [],
+                        "review_1" : [],
+                        "review_2" : [],
+                        "review_3" : [0],
+                        "review_4" : [0,1],
+                        "review_5" : [1],
+                        "review_6" : [],
+                        "review_7" : []
+                    },
+                    "output_sentence" : "The hotel is also located near to CN Tower."
+                }
+
+            ]
+        },
+        {
+            "id": 1,
+            "reviews" :  {
+                "review_0" : "{HS} I got my dog a little treat{HE} for his birthday and he absolutely loved it! It was a peanut butter cookie and it was easy and soft for him to eat. {HS} It wasn't expensive at all{HE} either and was cute to use for some photos of him too!",
+                "review_1" : "Just moved to the area and I'm very picky about my little one and who grooms her. Happy to say that {HS} Courtney did a fabulous job{HE} and Peanut was happy and relaxed {HS} during her first grooming visit{HE}. I would highly recommend Courtney and Bogart's!",
+                "review_2" : "Stopped by here to pick up some honest kitchen which I usually buy online just ran out and needed some right away. {HS} Both the cashiers were rude, trying to rush me out of the store{HE} and not helpful at all. You'll never be finding me here again after that kind of customer service.",
+                "review_3" : "So far I've had nothing but positive experiences here. Great customer support, {HS} friendly greeting{HE}, {HS} passionate employees{HE} more than willing to get you a healthy treat for your furr baby, and some gluten free food. {HS} Love the selection of food, snacks, and treats{HE}, but the {HS} backroom groomers are average at best{HE}.",
+                "review_4" : "{HS} What an amazing selection of pet stuff{HE} with {HS} great prices{HE}. We travel to Vegas 4-5 times a year and will make sure this is one of our stops since we always travel with our dog. {HS} Better selection than any pet store in LA{HE}!",
+                "review_5" : "Love the doggie wash. Our pup is 130 pounds of love and {HS} Because of his size I don't trust anyone washing him{HE}, but me. {HS} This is great alternative of washing a giant dog at home{HE} and having half of the house wet during the process.",
+                "review_6" : "{HS} It's so nice to have a pet store with employees that genuinely care{HE} and will take the time to help you make decisions buying the right food for your pet! {HS} Such a wide variety of quality food at competitive prices{HE}. Highly recommend!!",
+                "review_7" : "{HS} My dogs love everything I buy them{HE} especially the pizza! Icarrot cake for her birthday, looked so cute and smelled delicious... I've bought cannolis, donut cookies, doggie o's, and coconut bites and will continue going! Highly recommend"
+            },
+            "output" : "This is a solid pet store with good prices and a nice variety of items including tasty treats. There's a groomer and a self-use doggie wash that get the job done well even with bigger dogs. The employees are friendly and passionate although cashiers can be a bit rude and make the customer feel rushed. Overall, a good selection of food, snacks and treats with a good although slightly inconsistent staff.",
+            "highlights_output_alignment" : [
+                {
+                    "alignments" : {
+                        "review_0" : [1],
+                        "review_1" : [],
+                        "review_2" : [],
+                        "review_3" : [2],
+                        "review_4" : [0,2],
+                        "review_5" : [],
+                        "review_6" : [1],
+                        "review_7" : [0]
+                    },
+                    "output_sentence" : "This is a solid pet store with good prices and a nice variety of items including tasty treats."
+                },
+                {
+                    "alignments" : {
+                        "review_0" : [],
+                        "review_1" : [0,1],
+                        "review_2" : [],
+                        "review_3" : [],
+                        "review_4" : [],
+                        "review_5" : [0,1],
+                        "review_6" : [],
+                        "review_7" : []
+                    },
+                    "output_sentence" : "There's a groomer and a self-use doggie wash that get the job done well even with bigger dogs."
+                },
+                {
+                    "alignments" : {
+                        "review_0" : [],
+                        "review_1" : [0,1],
+                        "review_2" : [0],
+                        "review_3" : [0,1,3],
+                        "review_4" : [],
+                        "review_5" : [],
+                        "review_6" : [0],
+                        "review_7" : []
+                    },
+                    "output_sentence" : "The employees are friendly and passionate although cashiers can be a bit rude and make the customer feel rushed."
+                },
+                {
+                    "alignments" : {
+                        "review_0" : [0],
+                        "review_1" : [0,1],
+                        "review_2" : [0],
+                        "review_3" : [0,1,2],
+                        "review_4" : [0,1,2],
+                        "review_5" : [],
+                        "review_6" : [0,1],
+                        "review_7" : [0]
+                    },
+                    "output_sentence" : "Overall, a good selection of food, snacks and treats with a good although slightly inconsistent staff."
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "reviews" : {
+                "review_0" : "This is {HS} probably my favorite Persian cuisine resturant in Vegas{HE}. The place is nicely decorated and very clean. I am very impressed with their food: the portions are huge and {HS} the food is delicious{HE}. I have tried their lamb shank and beef kebab.... Amazing!",
+                "review_1" : "It was a nice place in a very odd spot. Hard to find entrance and I don't think their vents work very well in kitchen since it was extremely smokey when we walked in. They don't have fountain soda only cans, so no free refills. {HS} The food was ok{HE}. Not anything I really think we would go back for though.",
+                "review_2" : "{HS} Great food{HE} and we had a great time here interfering a party that seemed to be going on here. The family platter we got was sooo good, {HS} would definitely return{HE}! I also really liked the sour milk yogurt drink they have here.",
+                "review_3" : "{HS} If you are looking for great Iranian (Persian) or Mediterranean food this is the place to go! They have the best food and the greatest customer service.{HE} If you are in Vegas stop by this place, don't miss out on it!",
+                "review_4" : "{HS} I am very excited that I found this restaurant{HE}. They offer a very good lunch special menu with {HS} good prices{HE} for generous portions of {HS} delicious food{HE}. {HS} I plan on returning often{HE}. The beef koobideh kabob was succulent and the side salad was refreshingly bright.",
+                "review_5" : "I {HS} highly recommend American Gypsy Cafe{HE}. I stop by for lunch or dinner whenever I'm in Vegas. I have ordered pretty much everything on the menu, and I have never been disappointed. {HS} Great food{HE}, {HS} great service{HE}, great all around dining experience!",
+                "review_6" : "Eaten there twice so far and both time everything has been excellent. {HS} Very tasty food{HE} and the owner actually goes in the back and cooks it all up himself. Falafel appetizer and hummus are great starters and the beef koobideh kabobs are great. My friend had the chicken koobideh kabob and loved it. Lunch specials have great deals too.",
+                "review_7" : "I saw ants in the kitchen area on the way to bathroom. {HS} Do not eat here{HE}!!! Omg unsanitary. Be aware!! I canceled my order and left asap. You could get staph infection from ants and other bugs. Costumer beware!"
+            },
+            "output" : "This restaurant is one of the better Mediterranean restaurants in town. The food is overall very well-liked, and the service is very good. The prices are also pretty good. Overall, this is a good restaurant that is well-recommended for Mediterranean/Persian food.",
+            "highlights_output_alignment" : [
+                {
+                    "alignments" : {
+                        "review_0" : [0],
+                        "review_1" : [],
+                        "review_2" : [],
+                        "review_3" : [],
+                        "review_4" : [],
+                        "review_5" : [],
+                        "review_6" : [],
+                        "review_7" : []
+                    },
+                    "output_sentence" : "This restaurant is one of the better Mediterranean restaurants in town."
+                },
+                {
+                    "alignments" : {
+                        "review_0" : [1],
+                        "review_1" : [0],
+                        "review_2" : [0],
+                        "review_3" : [0],
+                        "review_4" : [2],
+                        "review_5" : [1,2],
+                        "review_6" : [0],
+                        "review_7" : []
+                    },
+                    "output_sentence" : "The food is overall very well-liked, and the service is very good."
+                },
+                {
+                    "alignments" : {
+                        "review_0" : [],
+                        "review_1" : [],
+                        "review_2" : [],
+                        "review_3" : [],
+                        "review_4" : [1],
+                        "review_5" : [],
+                        "review_6" : [],
+                        "review_7" : []
+                    },
+                    "output_sentence" : "The prices are also pretty good."
+                },
+                {
+                    "alignments" : {
+                        "review_0" : [0,1],
+                        "review_1" : [0],
+                        "review_2" : [0,1],
+                        "review_3" : [],
+                        "review_4" : [0,2,3],
+                        "review_5" : [0,1],
+                        "review_6" : [0],
+                        "review_7" : [0]
+                    },
+                    "output_sentence" : "Overall, this is a good restaurant that is well-recommended for Mediterranean/Persian food."
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "reviews" : {
+                "review_0" : "Came here to have my IPAD4 cracked screen fixed and they did a fantastic job and at {HS} a really affordable price{HE}. Definitely worth a try if you have a need to repair you tablet or phone. Will update if there are any problems but they have a 30 day warranty.",
+                "review_1" : "I stopped by Mobile Square recently, to replace the battery on my iPhone 6. {HS} The staff were professional, knowledgeable{HE}, {HS} and had the job done in 20 minutes{HE}! My phone has been working great. With the 30 day warranty they offer, {HS} plus their ridiculously good prices{HE}, I couldn't recommend this place enough.",
+                "review_2" : "Got my iPhone 6 wet on a run, power button didn't work, volume and home button on the fritz, and the phone kept trying to turn off. {HS} $30 and 1 hour later, I'm happily posting this from my phone{HE}!",
+                "review_3" : "These guys are the biggest crooks known to man. They fixed my screen with an aftermarket part claiming that was an original part. The resolution on my screen was distorted because of this.My touch screen is not glitching after 3 weeks.DO NOT GO TO THEM. THEY JUST WANT YOUR MONEY!! {HS} HORRIBLE SERVICE{HE}!",
+                "review_4" : "{HS} These guys were really quick and professional{HE}! Was recommended by a friend. {HS} Got my Samsung phone fixed in 30 mins{HE} and {HS} the price was great{HE} and {HS} service was attentive{HE}. They also threw in a case and protector. Now my phone feels great! Would totally recommend and definitely coming back!",
+                "review_5" : "Unreliable liar. {HS} Does not honour what their agreed upon quoted price was{HE}. I called them twice confirmed the price to replace a glass screen. After coming in, the {HS} price was changed on me{HE}. Beware. Do not deal with.",
+                "review_6" : "{HS} Awesome super fast super inexpensive service{HE}. I was really impressed. {HS} Really professional{HE} and nice people. I smashed my iPhone 7 screen to pieces and {HS} it came out to $75 after the $5 yelp discount{HE}. Pay cash so you don't have to pay tax. 30 day warranty to for any screen response issues. Thanks guys!!!",
+                "review_7" : "I took my iPad to change what I thought was a dead battery. But they tested it first to make sure it was running properly without selling me something I didn't need. {HS} Very professional{HE}. I've used them before also to change my iPad cracked screen and {HS} they did a fine job.{HE}"
+            },
+            "output" : "Great customer service, tends to the customers' needs very quickly and perform very thorough and fascinating jobs. Some customers might have complaints as 100% perfection is not possible, but all in all, they perform professionally and have one of the cheapest prices available.",
+            "highlights_output_alignment" : [
+                {
+                    "alignments" : {
+                        "review_0" : [],
+                        "review_1" : [0,1],
+                        "review_2" : [0],
+                        "review_3" : [0],
+                        "review_4" : [0,1,3],
+                        "review_5" : [0],
+                        "review_6" : [1],
+                        "review_7" : [0,1]
+                    },
+                    "output_sentence" : "Great customer service, tends to the customers' needs very quickly and perform very thorough and fascinating jobs."
+                },
+                {
+                    "alignments" : {
+                        "review_0" : [0],
+                        "review_1" : [0,1,2],
+                        "review_2" : [0],
+                        "review_3" : [0],
+                        "review_4" : [0,1,2,3],
+                        "review_5" : [0,1],
+                        "review_6" : [0,1,2],
+                        "review_7" : [0,1]
+                    },
+                    "output_sentence" : "Some customers might have complaints as 100% perfection is not possible, but all in all, they perform professionally and have one of the cheapest prices available."
+                }
+            ]
+
+        }
+    ]
+}

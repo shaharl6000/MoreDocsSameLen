@@ -1,0 +1,185 @@
+{
+  "prompts": [
+    {
+      "id": 0,
+      "instructions": "In this task you are presented with multiple documents that are related to the same topic. In each document, each mention of an entity or event is enclosed with square brackets, followed by the mention's unique id. That is: '[some mention](id)'. Your task is to identify and cluster together mentions that are coreferring with each other, i.e., mentions that mark the same entity or event. output the list of clusters, where each cluster is a list of ids of coreferring mentions. For example, if you think that mentions (1) and (2) refer to the same entity, and mentions (3) and (4) refer to the same entity, but these two entities are different, you should output: [[1, 2], [3, 4]].",
+      "comments": ""
+    },
+	{
+      "id": 1,
+      "instructions" : "Given a set of documents related to the same topic, each containing entities or events marked with unique identifiers in the format '[some mention](id)', your task is to analyze these documents and identify mentions that refer to the same entity or event. Once identified, group these mentions into clusters, where each cluster contains the ids of mentions that are coreferential. Output the clusters in the following format: a list of lists, where each inner list contains the ids of coreferring mentions. For instance, if mentions (1) and (2) are coreferential, and mentions (3) and (4) are coreferential, but refer to different entities, the output should be: [[1, 2], [3, 4]]. Please process the input and produce the correct clusters based on coreference.",
+      "comments": ""
+    },
+	{
+      "id": 2,
+      "instructions" : "Your task is to process a set of documents, each discussing a similar topic and containing marked mentions of entities or events in the format '[some mention](id)'. Identify mentions that refer to the same entity or event and group these ids into clusters. Each cluster should consist of ids that belong to coreferential mentions. Output these clusters in a nested list format, for example, if mentions tagged as (1) and (2) are coreferential, and (3) and (4) are as well, but separate from the first group, your output should look like: [[1, 2], [3, 4]].",
+      "comments": ""
+    },
+	{
+      "id": 3,
+      "instructions" : "Examine several documents linked by a common theme, noting that each mention of an entity or event within these documents is denoted by '[some mention](id)'. Your objective is to find and group ids of mentions that correspond to the same entity or event into clusters. The desired output format is a list of lists, where each sublist contains ids of mentions that are coreferential. For example, an appropriate output for coreferential mentions (1) and (2), and another pair (3) and (4), would be [[1, 2], [3, 4]].",
+      "comments": ""
+    },
+	{
+      "id": 4,
+      "instructions" : "Within multiple documents on a similar subject, each entity or event mention is bracketed and tagged with an id in the format '[some mention](id)'. Your role is to ascertain which mentions refer to the same entity or event, grouping these ids into clusters. Each cluster will be a list containing the ids of mentions that are coreferential. For instance, if you determine that (1) and (2), as well as (3) and (4), refer to distinct entities, you should produce the output as: [[1, 2], [3, 4]].",
+      "comments": ""
+    },
+	{
+      "id": 6,
+      "instructions" : "Analyze a series of documents that discuss the same topic where entities and events are noted as '[some mention](id)'. Group mentions that refer to the same entity or event into clusters by their ids. Each cluster should be presented as a list of these ids, such as [[1, 2], [3, 4]], indicating coreference between the mentions within each list.",
+      "comments": ""
+    },
+	{
+      "id": 7,
+      "instructions" : "Review a collection of documents with related topics, identifying and clustering ids of entity and event mentions, denoted as '[some mention](id)'. Mentions that are coreferential should be grouped together. Format your output as a series of lists, each containing ids of mentions that reference the same entity or event, e.g., [[1, 2], [3, 4]]",
+      "comments": ""
+    },
+	{
+      "id": 8,
+      "instructions" : "Given multiple documents related by a common theme, each containing marked mentions of entities or events as '[some mention](id)', identify which mentions refer to the same entity or event and cluster these mentions' ids together. Your objective is to find and group ids of mentions that correspond to the same entity or event into clusters. The desired output format is a list of lists, where each sublist contains ids of mentions that are coreferential. For example, an appropriate output for coreferential mentions (1) and (2), and another pair (3) and (4), would be [[1, 2], [3, 4]].",
+      "comments": ""
+    },
+	{
+      "id": 9,
+      "instructions" : "Given a collection of documents on the same topic, identify mentions of entities or events marked as '[some mention](id)'. Your task is to group ids of mentions that refer to the same entity or event into clusters. Output these clusters as lists of ids, each representing a set of coreferential mentions. For example, if you find that mentions (1) and (2) refer to the same entity, and (3) and (4) refer to another, output should be: [[1, 2], [3, 4]].",
+      "comments": ""
+    },
+	{
+      "id": 10,
+      "instructions" : "Analyze a set of documents that discuss a unified topic, where each entity or event is uniquely identified by '[some mention](id)'. Group together the ids of mentions that are coreferential. Present your findings as a list of lists, where each sublist contains ids of mentions referring to the same entity or event, e.g., [[1, 2], [3, 4]]. Ensure accuracy in identifying and clustering these mentions.",
+      "comments": ""
+    },
+	{
+      "id": 11,
+      "instructions" : "Review documents related by a common theme, each containing marked mentions of entities or events in the format '[some mention](id)'. Determine which mentions refer to the same entity or event and cluster their ids accordingly. Output these clusters as nested lists, where each list contains ids of coreferential mentions, such as [[1, 2], [3, 4]]. This task requires precise identification and clustering based on coreference.",
+      "comments": ""
+    },
+	{
+      "id": 12,
+      "instructions" : "Your challenge is to navigate through multiple documents related by a common topic, identifying mentions of entities or events enclosed as '[some mention](id)'. Group these mentions by ids when they refer to the same entity or event. Present your clusters as lists of ids that show coreference, for instance, [[1, 2], [3, 4]]. This task requires keen attention to detail and accuracy in identifying connections",
+      "comments": ""
+    },
+	{
+      "id": 13,
+      "instructions" : "Act as a data detective and delve into several documents, each marked by similar themes and containing entities or events tagged as '[some mention](id)'. Your mission is to uncover which mentions are coreferential and cluster their ids accordingly. Your findings should be reported as lists of ids grouped by coreference, like [[1, 2], [3, 4]].",
+      "comments": ""
+    },
+	{
+      "id": 14,
+      "instructions" : "Task: Analyze a collection of thematic documents to identify and cluster mentions of entities or events, formatted as '[some mention](id)', that refer to the same concept. Your output should clearly display clusters of ids representing coreferential mentions, such as [[1, 2], [3, 4]], demonstrating your ability to discern and link related information.",
+      "comments": ""
+    },
+	{
+      "id": 15,
+      "instructions" : "In this detailed analysis task, you are provided with multiple documents, each discussing a similar theme. Within these documents, mentions of entities or events are specifically highlighted and labeled with unique identifiers in the format 'some mention](id)'. Your primary objective is to meticulously identify which of these mentions refer to the same real-world entity or event, and then systematically group together their corresponding ids into clusters. Each cluster should exclusively contain ids of mentions that are coreferential. For clarity in your output, format your results into a list of these clusters, where each sublist represents a distinct group of coreferential mentions. For instance, if your analysis concludes that mentions (1) and (2) are about the same entity, and mentions (3) and (4) about another distinct entity, your output should be formatted as: [[1, 2], [3, 4]]. This task requires precise attention to detail and analytical rigor to ensure accuracy in the clustering process.",
+      "comments": ""
+    },
+	{
+      "id": 16,
+      "instructions" : "Examine several documents on a unified topic, noting each mention of an entity or event as '[some mention](id)'. Group mentions by ids that refer to the same entity or event. Output these clusters in a format of nested lists, with each list containing ids of coreferential mentions, like [[1, 2], [3, 4]].",
+      "comments": ""
+    },
+	{
+      "id": 17,
+      "instructions" : "In this comprehensive task, you are faced with an array of documents tied by a common thematic element. Each document features various mentions of entities or events, each enclosed within square brackets and followed by a unique identification number in the format '[some mention](id)'. It is your responsibility to sift through these mentions, discerning which ones are references to the same entity or event across different texts. Upon identifying these coreferential mentions, you are to organize and cluster their ids into coherent groups. The final output should be a structured list of these clusters, with each cluster formatted as a list containing ids of mentions that you have determined to be about the same entity or event. For example, if you deduce that mentions (1) and (2) discuss one entity, and mentions (3) and (4) another, your result should be presented as: [[1, 2], [3, 4]]. This task demands a high level of accuracy and a methodical approach to ensure that each cluster is correctly assembled based on coreference analysis.",
+      "comments": ""
+    },
+	{
+      "id": 18,
+      "instructions" : "Within a group of related documents, each mention of an entity or event is uniquely identified in the format '[some mention](id)'. Your objective is to examine these documents and cluster the ids of mentions that are coreferential, i.e., refer to the same entity or event. The output should be a list of lists, where each sublist contains the ids of mentions that are grouped together based on coreference. For example, if mentions (1) and (2) are about the same entity, and (3) and (4) are about another, then the output should look like: [[1, 2], [3, 4]].",
+      "comments": ""
+    },
+	{
+      "id": 19,
+      "instructions" : "Engage in a task where you need to sift through several documents that deal with similar topics, noting that each entity or event mention is tagged in the format '[some mention](id)'. Identify and group mentions that refer to the same entity or event into clusters by their ids. Produce an output that consists of lists, where each list is a cluster of ids representing coreferential mentions. For instance, if (1) and (2) are deemed coreferential, as are (3) and (4), then your output should be structured as: [[1, 2], [3, 4]].",
+      "comments": ""
+    },
+	{
+      "id": 20,
+      "instructions" : "Your task involves processing a set of documents on a common subject, where each document includes mentions of entities or events marked by '[some mention](id)'. Your role is to determine which mentions refer to the same entity or event and cluster their ids together. The expected output format is a series of nested lists, with each list containing ids of coreferential mentions. For example, if mentions (1) and (2) are about the same entity, and (3) and (4) are about another, organize your output as: [[1, 2], [3, 4]].",
+      "comments": ""
+    }
+  ],
+  "demonstrations": [
+    {
+      "sample_id_train": 646,
+      "index": 125,
+      "documents": [
+        "Trust in human-robot interactions during [card game playing](76) . Robots are currently being developed to enter our lives and interact with us in different tasks .",
+        "The automation is demonstrated in automating the game play of Rummy . However , this approach can be adapted to automate any [card based game](36) . The unique approach is discussed and evaluated in achieving this objective .",
+        "Next , we describe the top-level architecture of our double-dummy solver ( dds ) , followed by a number of implementation techniques we employed in our dds . Finally we present experimental results , draw our conclusion and describe some future work toward automating [card-playing](25) in real bridge .",
+        "There has been a substantial interest recently in privacy preserving problems in various application domains , including data publishing , data mining , classication , secret voting , private querying of database , [playing mental poker](68) , and many others.",
+        "[Solving Solitaire](6) is a problem of computer game-playing , which belong to the research area of artificial intelligence . This paper proposes a conception of [solving Solitaire problem](32) based on genetic algorithm and realizes it in Java .",
+        "The key to understanding solutions to [solitaire-like games](16) is the identification of invariant properties of polynomial arithmetic . We demonstrate this via three case studies : solitaire itself , tiling problems and a collection of novel one-person games .",
+        "This upper bound saves much time at the next stage of backtrack searching . While solving the relaxed problems , we can prove many [peg solitaire problems](7) are infeasible . We proposed two types of backtrack searching , forward-only searching and forward-backward searching . The performance of these two methods highly depends on the symmetricity and the length of the sequence of required jumps . Our algorithm can solve all the [peg solitaire problem instances](97) we tried and the total computational time is less than 20 minutes on an ordinary notebook personal computer .",
+        "The research is descriptive qualitative . The data are of the register used in [card game](87) in the form words and compound word."
+      ],
+      "target": [
+        [87, 25, 36,  76], [68], [6, 32], [7, 97, 16]
+      ]	  
+    },
+    {
+      "id_train": 614,
+      "index": 93,
+      "documents": [
+        "Recent research endeavors have shown the potential of using feed-forward convolutional neural networks to accomplish fast style transfer for images . In this work , we take one step further to explore the possibility of exploiting a feed-forward network to perform [style transfer](69) for videos and simultaneously maintain temporal consistency among stylized video frames .",
+        "Standards and guidelines that include information dealing with safety-related communications and the design of safety-related communication systems are introduced . The typical message error types or threats relating to [serial mode transmission](27) as well as defence methods against these threats are also introduced . There are several safety buses available for safety-related machine and automation applications .",
+        "Then , different from conventional style transfer algorithm in which style transferring is applied uniformly across all image regions , the authors apply a saliency algorithm to guide the [style transferring process](21) , enabling different types of [style transferring](89) to occur in different regions . Extensive experiments show that the proposed saliency detection algorithm and the style transfer algorithm are superior in performance and efficiency .",
+        "To minimize such a risk and reduce the influence of spatial differences between the input image and the style image , we introduce a spatial transformation strategy in this paper before style transfer . By maximizing the normalized cross-correlation of the feature maps , we propose to apply a series of affine transformations to the reference image and use those spatially-transformed images as the style reference to achieve a [robust style transfer](58) .",
+        "And a novel way is proposed to accelerate the [style transfer operation](43) and reduce the memory usage at run-time by conducting the super-resolution style transfer network ( SRSTN ) , which can generate super-resolution stylized images . Compared with other style transfer networks , SRSTN can produce competitive quality resulting images with a faster speed as well as less memory usage .",
+        "2 , 500 development and 5 , 000 test sentences have been translated from English into 14 languages by professional translators , making results across different languages directly comparable . Note that no human translated training data is provided ; instead , different systems are to use English training data from MultiNLI , and their [transfer](6) performance is evaluated on the rest of languages ."
+      ],
+      "target": [
+        [69, 21, 89, 58, 43], [6], [27]
+      ]
+    },
+    {
+      "id_train": 662,
+      "index": 141,
+      "documents": [
+        "It implies many possible combinations of formerly discrete realms — print , television , radio and online media — and has an impact on the organisation of newsrooms with joint newsrooms for all channels and journalists working for more than one platform . Furthermore convergence changes the storytelling in journalism , because the Internet is a central hub of text , imagery , video and audio and is not only a content platform but also a distribution platform for conventional media — with active users taking part at the [news process](2) .",
+        "Social media monitoring is now an essential part of brand management , political science , and [news production](70) . Automatic tweet ranking and content recommendation methods are required , in order to support human analysts in deriving useful insights from large-scale social media data .",
+        "Addresses the information sources which are used in the [news process](42) . Examines the preference for human sources as opposed to library‐based information and discusses the influence of pragmatic constraints like time and space on the production of news .",
+        "Similarly , OCR output contains almost exclusively substitution errors , which ordinarily account for less than 20 percent of keyboarded misspellings [ 9 , 10 ] . This paper describes the correction pro.gram developed as part of SPEEDCOP ( [Spelling Error](26) . Detection/ © 1984ACM0001 - 0782/84/0400 - 0358 75¢ Correction Project ) , a Chemical Abstracts Service ( CAS ) project supported by the National Science Foundation .",
+        "We read James L. Peterson 's article , “ Computer Programs for Detecting and Correcting Spelling Errors ” with great interest . We too have recently developed a [spelling correction program](59) as part of a tutorial on programming techniques and style . Our basic modesty inhibited us from publishing the details — there was , after all , little research involved in making the program .",
+        "A practical goal for natural language text generation research is to converge on a separation of functions into modules that can be independently re-used . This paper addresses issues related to software re-use and evolution in [text generation systems](85) . We describe the benefits we obtained by adapting and generalizing the generation modules and techniques we used for the successive development of three distinct text generation applications , PLANDoc , FLOWDoc , and ZEDDoc ."
+      ],
+      "target": [
+        [85], [26, 59], [70, 2, 42]
+      ]
+    },
+    {
+      "id_train": 580,
+      "index": 59,
+      "documents": [
+        "Results : The [T5-T10 thoracic segment model](30) is presented with its passive components , bones , intervertebral discs and flavum , intertransverse and supraspinous ligaments , in different views , as well as the volumetric mesh .",
+        "Empirical results show that today 's models struggle at our task , even those with billions of parameters . The best model , a [finetuned T5](84) , writes advice that is at least as helpful as human-written advice in only 9 % of cases.",
+        "Half black screen was shown in [Philips T5-NT MRI Scanner](22) and with its message . This trouble was associated with environment temperature , checking machine and find the bad parts TC-420 board at the best power up time .",
+        "The 3.6 [GHz SPARC T5 processor](31) is Oracle 's next generation CMT SoC processor implemented in TSMC 's 28 nm process with 1.5 billion transistors . Significant performance improvements were made by doubling the previous generations number of cores to 16 and L3 cache size to 8 MB while increasing bandwidth by nearly 3 × .",
+        "To demonstrate the usefulness of this evaluation paradigm , we instantiate these five tests on a highly compositional data set which we dub PCFG SET and apply the resulting tests to three popular [sequence-to-sequence models](77).",
+        "Life cycle assessment ( LCA ) methodology has been used to evaluate the performance of the following lighting systems : compact fluorescent lamps ( CFL ) , light-emitting diode ( LED ) lamps , and fluorescent tubes ( [T5 type](25) ) . This work covers the singularity of the French electricity mix for indoor workplaces lighting and describes the best strategy for lamp replacement .",
+        "We propose auxiliary prediction modules that work well for sequence taggers , graph - based dependency parsers , and [sequence - to - sequence models](54) ."
+      ],
+      "target": [
+        [77, 54], [84], [22], [25], [30], [31]
+      ]
+    },
+    {
+      "id_train": 705,
+      "index": 184,
+      "documents": [
+        "To solve the problem of automatic muti-document summarization with spasre topics , the recently proposed fully sparse topic model is introduced into the [document summarization field](76) . An automatic summarization algorithm based on topic distribution and words distribution is proposed .",
+        "Continued advances in algorithms and techniques for this task depend on standardized and reproducible evaluation methodologies for comparing systems . However , [timeline summary evaluation](60) is still in its infancy , with competing methodologies currently being explored in international evaluation forums such as TREC .",
+        "Also , we plan to investigate the effectiveness of our architecture on other sequence - tosequence tasks , [e.g. summarization](30) , constituency parsing , dialog modeling . section : A Alignment Visualization",
+        "Sentence ranking is the key issue of [text automatic summarization](26) . Based on mutual reinforcement principles , we proposed a new sentence ranking model —— paragraph-sentence mutual reinforcement model .",
+        "document : Faithful to the Original : Fact Aware Neural Abstractive Summarization Unlike [extractive summarization](22) , abstractive summarization has to fuse different parts of the source text , which inclines to create fake facts .",
+        "For accessibility to information retrieval and [text summarization processing](77) , we show concepts of a parsing framework dealing with linguistic features of this genre . To cover these features , we first developed a description language inferred from content structure analysis presented before .",
+        "We describe a novel combinatorial formulation that captures exactly the [document-summarization problem](9) , and we develop simple and efficient algorithms for solving it . We compare our algorithms with many popular document-summarization techniques via a broad set of experiments on real data ."
+      ],
+      "target": [
+        [26, 77, 9, 76, 30], [22], [60]
+      ]
+    }
+  ]
+}

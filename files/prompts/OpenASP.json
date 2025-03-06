@@ -1,0 +1,161 @@
+{
+  "prompts": [
+    {
+      "id": 0,
+      "instructions": "In this task you are required to generate an aspect-based summary of a set of documents related the same topic. Please write a short, concise aspect-based summary, only summarize content from the above documents, avoiding any external data sources.",
+      "comments": ""
+    },
+	{
+      "id": 1,
+      "instructions": "Your goal is to create a short, concise aspect-based summary of the given documents. Summarize the key points accurately, using only the information from these documents and excluding any external sources.",
+      "comments": ""
+    },
+	{
+      "id": 2,
+      "instructions": "Produce a brief, aspect-based summary of the collection of documents on the same topic. Ensure your summary is concise and derived only from the provided documents, avoiding any external data sources.",
+      "comments": ""
+    },
+	{
+      "id": 3,
+      "instructions": "Your task is to generate a detailed yet concise aspect-based summary from a collection of documents that focus on the same topic. Begin by thoroughly examining each document to understand the main aspects and themes. Then, synthesize this information into a coherent summary that highlights the significant points. Make sure your summary is short and derived exclusively from the content of the provided documents, without incorporating any external data.",
+      "comments": ""
+    },
+	{
+      "id": 4,
+      "instructions": "Given a set of documents related to a specific topic, generate a short, concise aspect-based summary. Ensure that the summary is based solely on the content of the documents provided",
+      "comments": ""
+    },
+	{
+      "id": 5,
+      "instructions": "You will receive several documents on the same topic. Your task is to write a brief aspect-based summary, using only the information from the provided documents and excluding any external sources.",
+      "comments": ""
+    },
+	{
+      "id": 6,
+      "instructions": "You are tasked with generating an aspect-based summary of several documents. Summarize the content briefly and accurately, using only the information from the documents give",
+      "comments": ""
+    },
+	{
+      "id": 7,
+      "instructions": "In this task, you are required to create an aspect-based summary of a set of documents all related to the same topic. Carefully read through each document and identify the key aspects discussed. Summarize these aspects in a concise manner, ensuring that your summary captures the essential points. It is crucial to base your summary solely on the provided documents, avoiding any external information or references. ",
+      "comments": ""
+    },
+	{
+      "id": 8,
+      "instructions": "You are tasked with producing an aspect-based summary for a series of documents related to the same topic. Start by analyzing each document to identify the critical aspects covered. Your goal is to condense this information into a clear and concise summary, ensuring that you accurately represent the main points. The summary should be brief and entirely based on the provided documents, with no inclusion of external sources or data.",
+      "comments": ""
+    },
+	{
+      "id": 9,
+      "instructions": "Generate a concise aspect-based summary of the given documents. Focus on summarizing the content based solely on the information from these documents, avoiding any external sources.",
+      "comments": ""
+    },
+	{
+      "id": 10,
+      "instructions": "Create a concise aspect-based summary for the provided set of documents. Focus on the main aspects and themes discussed in these documents, ensuring that your summary is based entirely on the content of the provided documents and excludes any external sources.",
+      "comments": ""
+    },
+	{
+      "id": 11,
+      "instructions": "Produce a short and precise aspect-based summary of the given documents. Identify the key aspects discussed in these documents and synthesize a concise summary based solely on the provided content.",
+      "comments": ""
+    },
+	{
+      "id": 12,
+      "instructions": "You will receive a collection of documents focused on the same topic. Your task is to create an aspect-based summary that highlights the key aspects discussed in these documents. Ensure your summary is brief and does not include any external information.",
+      "comments": ""
+    },
+	{
+      "id": 13,
+      "instructions": "You are provided with multiple documents related to a single topic. Your task is to generate an aspect-based summary that captures the main aspects discussed in these documents. Ensure your summary is concise and solely based on the provided texts.",
+      "comments": ""
+    },
+	{
+      "id": 14,
+      "instructions": "You are tasked with generating an aspect-based summary of several documents on the same topic. Carefully review each document, identify the main aspects, and write a brief summary that captures these aspects using only the provided documents.",
+      "comments": ""
+    },
+	{
+      "id": 15,
+      "instructions": "Your role is to create an educational summary for students using a collection of documents on the same topic. Focus on the main aspects that would help students understand the core concepts discussed in the documents. Write a short, clear aspect-based summary, relying exclusively on the provided texts.",
+      "comments": ""
+    },
+	{
+      "id": 16,
+      "instructions": "Imagine you are preparing a briefing for a busy executive who needs to understand the key aspects of several documents quickly. Summarize the most important points from these documents in a concise manner, ensuring your aspect-based summary is derived entirely from the content of the provided documents and avoids any external information.",
+      "comments": ""
+    },
+	{
+      "id": 17,
+      "instructions": "As an advanced AI tasked with summarizing documents, your goal is to generate an aspect-based summary. Think of yourself as a summarization expert, extracting the most critical aspects from the documents provided. Craft a concise summary that highlights these key aspects, ensuring it is based solely on the given documents.",
+      "comments": ""
+    },
+	{
+      "id": 18,
+      "instructions": "Imagine you are a journalist tasked with writing a summary article based on a series of documents related to a single topic. Identify the key aspects discussed in these documents and compose a brief, coherent summary that encapsulates the main points without introducing any external information.",
+      "comments": ""
+    },
+	{
+      "id": 19,
+      "instructions": "Your task is to act as a knowledge distiller, creating a concise aspect-based summary from a series of documents on the same topic. Focus on identifying and summarizing the critical aspects discussed in these documents, ensuring your summary is brief and based exclusively on the provided content.",
+      "comments": ""
+    },
+	{
+      "id": 20,
+      "instructions": "You are an AI assistant tasked with providing a summary for a set of documents related to a specific topic. Focus on the key aspects and themes discussed in these documents. Create a summary that captures these aspects in a concise manner, ensuring that your summary is based solely on the provided documents and excludes any external information.",
+      "comments": ""
+    }
+  ],
+  "demonstrations": [
+    {
+      "id_train": "Ron Paul comments/KROG/mnews-train.135533.A",
+      "index": 130,
+      "aspect_label": "Ron Paul comments",
+      "documents": [
+        "Texas Gov. Rick Perry, who is struggling in the polls, offered a lively retort when asked if his poor debate performances mean he's not ready to debate President Obama. Your Browser DoesNot Support IFrames. He compared himself to Tim Tebow, the Denver Broncos quarterback who is controversial because of his outward displays of Christian faith. \"I'm kinda getting to where I like these debates,\" Perry said. \"I hope Obama and I debate a lot. I'll get there early. We will get it on, and we will talk about our differences.\" \"There are a lot of folks who said Tim Tebow wouldn't be a very good NFL quarterback. That he doesn't have the right throwing mechanisms, or he's not playing the game right. He won two national championships and that looked pretty good, and we were the national champions in job creation back in Texas... I am the Tim Tebow of the Iowa caucuses.\" More on PostPolitics",
+        "Republican presidential candidates at the Iowa debate. (JIM YOUNG/REUTERS) \"The courts have become grotesquely dictatorial, far too powerful and I think frankly arrogant in their misreading of the American people,\" the former House speaker said. \"I would, just like [former presidents] Jefferson, Jackson, Lincoln and FDR, I would be prepared to take on the judiciary [branch of government] if it did not restrict itself in what it was doing.\" Agreeing with Gingrich, Rep. Michele Bachmann (R-Minn.) said \"if we give to the courts the right to make law than the people will have lost their representation.\" More on PostPolitics"
+      ],
+      "target": "Michele Bachmann agrees, but a slightly stunned Ron Paul responds that a president stripping power from judges presents a \"real problem\" in the separation of powers between the executive branch and the judiciary.\nBachmann and Paul go for each other's jugular over Iran.\n\"You cannot solve these problems with war,\" Paul responds, his voice rising."
+    },
+    {
+      "id_train": "Gingrich comments/KROG/mnews-train.135533.A",
+      "index": 275,
+      "aspect_label": "Gingrich comments",
+      "documents": [
+        "Texas Gov. Rick Perry, who is struggling in the polls, offered a lively retort when asked if his poor debate performances mean he's not ready to debate President Obama. Your Browser DoesNot Support IFrames. He compared himself to Tim Tebow, the Denver Broncos quarterback who is controversial because of his outward displays of Christian faith. \"I'm kinda getting to where I like these debates,\" Perry said. \"I hope Obama and I debate a lot. I'll get there early. We will get it on, and we will talk about our differences.\" \"There are a lot of folks who said Tim Tebow wouldn't be a very good NFL quarterback. That he doesn't have the right throwing mechanisms, or he's not playing the game right. He won two national championships and that looked pretty good, and we were the national champions in job creation back in Texas... I am the Tim Tebow of the Iowa caucuses.\" More on PostPolitics",
+        "Republican presidential candidates at the Iowa debate. (JIM YOUNG/REUTERS) \"The courts have become grotesquely dictatorial, far too powerful and I think frankly arrogant in their misreading of the American people,\" the former House speaker said. \"I would, just like [former presidents] Jefferson, Jackson, Lincoln and FDR, I would be prepared to take on the judiciary [branch of government] if it did not restrict itself in what it was doing.\" Agreeing with Gingrich, Rep. Michele Bachmann (R-Minn.) said \"if we give to the courts the right to make law than the people will have lost their representation.\" More on PostPolitics"
+      ],
+      "target": "Rivals and moderators put barely-front-runner Newt Gingrich in the hot seat, and his response was to be more rambunctious than ever.\nSome highlights: The biggest applause of the night follows Gingrich's threat to strip federal judges of their power if he becomes president because the courts are \"grotesquely\" dictatorial.\nThe judiciary is \"far too powerful and arrogant in their misreading of the American people,\" he says.\nThat's \"just not true,\" Gingrich snaps, saying he \"never lobbied under any\" circumstance.\n\"People ought to have facts before they go out with allegations.\"\nGingrich slams President Obama as a \"Saul Alinsky radical\" as the candidates explain how they would get Congress to work with the White House."
+    },
+    {
+      "id_train": "Award presented/KROG/mnews-train.132173.A",
+      "index": 321,
+      "aspect_label": "Debate skills",
+      "documents": [
+        "Perry: Good enough debater to beat Obama Rick Perry reiterated his frustration Sunday with a presidential nominating process that puts too much emphasis on debate performance, the morning after his campaign confirmed that he will attend at least five more in his bid for the Republican nomination. The Texas governor said 18 debates is way too many because they take an incredible amount of time and preparation. When you take a look at the debates, I readily admit I'm not the best debater, he said on Fox News Sunday. With as many debates as we've got coming up, I may be a pretty good debater before it's all said and done. We've got a great debater, a smooth politician, in the White House right now. That's not what we want right now, Perry said. The governor said he's confident he can draw a clear bright line if he is debating President Barack Obama during the general election. I think I am going to be able to stand on that stage and draw a clear contrast with Barack Obama, he said.",
+        "Fox News Sunday host Chris Wallace needled Texas Gov. Rick Perry on Sunday for pledging in his first paid campaign ad to create at least 2.5 million jobs as president. Two-and-a-half million jobs is terrible, the host told the Republican presidential candidate. We would roughly need 6 million jobs in the first four years just to stay even with population growth. So two-and-a-half-million jobs, the unemployment rate would increase! Jimmy Carter created 10.5 million jobs in his first four years. Perry said he would get criticized for not being realistic if he said he was going to create 10.5 million jobs. Let me tell you, any job at this particular point in time helps, he said. Wallace said the national unemployment rate would increase if Perry merely met the goal he set. You give this plan a chance, Perry told him, live in Austin."
+      ],
+      "target": "While freely admitting 'I'm not the greatest debater' in the GOP field, Rick Perry said today that he can go mano a mano with the debater-in-chief and come out ahead: “We’ve got a great debater, a smooth politician, in the White House right now. That’s not what we want right now. I think I am going to be able to stand on that stage and draw a clear contrast with Barack Obama."
+	  },
+    {
+      "id_train": "Performances/KROG/mnews-train.139540.A",
+      "index": 334,
+      "aspect_label": "Performances",
+      "documents": [
+        "Although the 2012 Grammy Awards will no doubt be overshadowed by Saturday's passing of music legend Whitney Houston, the show must go on. Even with the somber overtones, musicians and celebrities will still flock to the award show to celebrate the icon and their own achievements over the past year. Giulianna Rancic, who recently underwent a double mastectomy after her battle with breast cancer, was glowing in a black strapless cocktail dress. And as the red carpet began to heat up, the E! News host caught up with indie pop band Foster The People who will perform later in the broadcast with members of The Beach Boys and Maroon 5 in what will be a historic gathering of talent -- the surviving Beach Boys members have not performed together in 20 years, according to MTV. Bringing a bit of fun to the red carpet are Ellen Degeneres' pint-sized \"Ellen\" correspondents Sophia Grace and Rosie -- the tutu-clad duo who became YouTube sensations turned daytime darlings after belting out Nicki Minaj's \"Super Bass. \" Check back for more details on the 54th Grammy Awards red carpet arrivals. Check out the Grammys red carpet scene below:",
+        "Sing it, Bruce! Bruce Springsteen and his E Street band have released the video for \"We Take Care Of Our Own,\" off their upcoming album \"Wrecking Ball. \" Shot in both black and white and color, Springsteen takes one for the working class with a factory rock-out session and begs the questions, \"Where's the works that has set my hands, my soul free? Where's the spirit that will reign, reign over me? Where's the promise from sea to shining sea?\" Springsteen recently announced that he had hired late band member Clarence Clemons' nephew, Jake Clemons, to join the band on saxophone. \"Wrecking Ball,\" which draws inspiration from the Occupy movement, hits stores on March 6th."
+      ],
+      "target": "The Grammys got started a performance.\nBruce Springsteen and the E Street Band did a rousing rendition of \"We Take Care of Our Own\".\nThen: Nope, it's still not time for an award: Bruno Mars takes the stage, then the first presenters appear—20 minutes into the ceremony.\nBut Alicia Keys and Bonnie Raitt first perform a tribute to Etta James."
+    },
+    {
+      "id_train": "Karl Rove/KROG/mnews-train.134832.A",
+      "index": 327,
+      "aspect_label": "Karl Rove",
+      "documents": [
+        "4:31 January 6, 2012 Romney's post-Iowa momentum real? A few months ago, people really didn't seem to like Mitt Romney. Now, after the Iowa caucuses, it seems the tide has changed. Or has it? Nancy Cordes and Jim Axelrod speak with Time magazine columnist Joe Klein and CBS News political director John Dickerson about Romney's rise.",
+        "Former White House spokesman and Obama campaign adviser Robert Gibbs was gleeful Tuesday over former House speaker Newt Gingrich's rising stature and the prospect of Donald Trump moderating a Republican presidential debate, likening it to \"shooting fish in a barrel.\" \"Cancel Christmas. Just get ready for the Donald Trump debate. ... Pay-per-view. Pay-per-view. We ought to have this, the new rule, I think you've heard, you have to have your birth certificate to participate in the debate. It's like shooting fish in a barrel,\" said Gibbs on MSNBC's \"Morning Joe,\" mocking Trump's fascination with Obama's birth certificate. Text Size - + reset Gibbs: 'Shooting fish in a barrel' POLITICO 44 \"I've never seen so many people fall over a guy who FOX's own poll showed that if you got his endorsement, 5 percent of the people would be more in favor of you and 30 percent of the people would be less in favor of you,\" he added. The former White House spokesman continued through with what has been the Obama campaign's strategy recently -- to subtly compliment Republican candidates who are not Mitt Romney, and to minimize Romney's own chances. Gingrich \"has done very well in these debates. He is very glib. I think he's done it in a way that's interesting ... not by trying to tear any one or two people down but by trying just to distinguish himself in these debates,\" he said. \"I think the Romney campaign has probably made some real fundamental strategic mistakes about not playing in Iowa a lot earlier,\" Gibbs continued."
+      ],
+      "target": "Karl Rove: Also on Fox News, he wondered last night, \"How can we have any confidence [Trump is] going to be impartial in his questions?\nWe’ve got a guy who’s not only saying, I am going to make a decision about who I am going to endorse shortly after this debate and I am already leaning some way and I may run myself.\nAnd we expect him to be the impartial moderator at this debate?\""
+    }
+  ]
+}

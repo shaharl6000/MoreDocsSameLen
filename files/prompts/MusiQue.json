@@ -1,0 +1,239 @@
+{
+  "prompts": [
+    {
+      "id": 0,
+      "instructions": "In this task, you are presented with question, and 20 documents that covers the answer to that question. Deduce your answer solely from the provided documents, avoiding any external data sources. Keep the answer short and concise, leave behind any irrelevant details.",
+      "output_format": "If the documents don't have the answer, set \"is_answerable\" to false in the output dictionary. If they do, set \"is_answerable\" to true and put the answer in \"answer_content\".",
+      "comments": ""
+    },
+    {
+      "id": 1,
+      "instructions": "Answer the given multi-hop question, based only on information from the 20 documents provided below. Task: multi hop question answering from a multi document input. Output: The answer should be deduced solely from the text from the above documents, avoiding any external data sources. Give a short, to-the-point response, excluding irrelevant details.",
+      "output_format": " Use \"is_answerable\": false in the output dictionary if the answer isn't in the documents. If it is, set \"is_answerable\": true and include the answer in \"answer_content\".",
+      "comments": ""
+    },
+    {
+      "id": 2,
+      "instructions": "Input: A multi-hop question and a collection of multi-document texts. Task: Understand the question and decompose it into its sub questions. Answer the decomposed questions from the provided multiple documents. Come up with the answer to the original input question. Output: A short and concise answer to the question, leave behind any irrelevant details. Also, the answer should be deduced solely from the text from the above documents, avoiding any external data sources.",
+      "output_format": "Indicate \"is_answerable\": false in the output if the answer isn't found in the documents. If found, use \"is_answerable\": true and place the answer in \"answer_content\".",
+      "comments": ""
+    },
+    {
+      "id": 3,
+      "instructions": "Your task is to read text from multi-document input, and answer a multi-hop question solely from the information that is in the documents. Input: A multi-hop question and a collection of multi-document texts. Task: Answer the question provided from the collection of multi-documents. Output: A short and concise answer to the question, leave behind any irrelevant details. Also, the answer should be deduced solely from the text from the above documents, avoiding any external data sources.",
+      "output_format": "Set \"is_answerable\": false in the dictionary if the documents don't contain the answer. If they do, set \"is_answerable\": true and write the answer in \"answer_content\".",
+      "comments": ""
+    },
+    {
+      "id": 4,
+      "instructions": "Input: A complex, multi-hop question alongside a collection of related documents. Task: Carefully analyze the question to identify its underlying sub-questions. Utilize the provided documents to systematically address each sub-question. Synthesize the answers to these sub-questions to formulate a comprehensive response to the original query. Output: Deliver a succinct and precise answer to the initial question. Ensure that the response is derived entirely from the provided documents, disregarding any information from external sources.",
+      "output_format": "If the documents lack the answer, use \"is_answerable\": false in the output dictionary. If the answer is there, use \"is_answerable\": true and include it in \"answer_content\".",
+      "comments": ""
+    },
+    {
+      "id": 5,
+      "instructions": "Your task to to deliver a succinct and precise answer to the given question, out of a given multiple document texts. Ensure that the response is derived entirely from the provided documents, disregarding any information from external sources.",
+      "output_format": "Mark \"is_answerable\" as false if the answer isn't in the documents. If it is, mark \"is_answerable\" as true and provide the answer in \"answer_content\".",
+      "comments": ""
+    },
+    {
+      "id": 6,
+      "instructions": "Imagine you're a detective with a pile of evidence before you. Your case? To solve the puzzle posed by a given question. Use only the clues from these documents to build your case and crack the question wide open. No outside help—just you and the documents.",
+      "output_format": "Set \"is_answerable\": false in the output if the documents don't have the answer. If they do, set \"is_answerable\": true and include the answer in \"answer_content\".",
+      "comments": ""
+    },
+    {
+      "id": 7,
+      "instructions": "You are an advanced AI capable of processing and analyzing text from multiple documents related to a specific topic. Your expertise involves extracting only the essential information to construct a clear and concise answer to complex questions. Below are multiple documents on a unified theme, each separated by triple backticks. Your task is to answer the provided question. Focus your analysis to derive the answer strictly from the content provided within these documents, ensuring no external information is used. Keep the reply short and clear, leaving out irrelevant parts.",
+      "output_format": "Indicate \"is_answerable\" as false if the answer can't be found in the documents. If found, use \"is_answerable\" as true and add it to \"answer_content\".",
+      "comments": ""
+    },
+    {
+      "id": 8,
+      "instructions": "You are an AI model specialized in multi-hop question answering. Your function is to meticulously read through multiple documents and synthesize information to answer questions that require connecting data across different texts. Enclosed are several documents, each marked by triple backticks. The challenge is to answer a multi-layered question. Ensure that your response is entirely based on the documents, with no external data influencing the outcome. Deliver a short, clear response, excluding unnecessary information.",
+      "output_format": "If no answer is found in the documents, use \"is_answerable\": false. If the answer is found, use \"is_answerable\": true and provide it in \"answer_content\".",
+      "comments": ""
+    },
+    {
+      "id": 9,
+      "instructions": "You function as a thematic synthesizer, equipped with the ability to discern thematic patterns and extract critical insights from multiple documents. Your role is to fuse this information into a coherent response that addresses a specified multi-layered question. Provided here are multiple documents, each themed around a central topic and individually separated by triple backticks within different user messages. Your challenge is to distill these texts into a precise answer to the given question. Your response must be formed exclusively from the contents of these documents, avoiding any external influences.",
+      "output_format": "If the answer isn't in the documents, set \"is_answerable\": false in the output. If it is, set \"is_answerable\": true and put the answer in \"answer_content\".",
+      "comments": ""
+    },
+    {
+      "id": 10,
+      "instructions": "You task is to answer a multi-hop question given multiple documents. You are an expert AI designed for contextual inquiry, capable of navigating complex information landscapes to pinpoint accurate answers. Your core skill lies in evaluating and interpreting interconnected data from diverse documents to address specific questions. Your objective is to analyze the given documents comprehensively and provide a focused response to the given question, relying solely on the data within these texts. Ensure your response is brief and to the point, avoiding extra information.",
+      "output_format": "Use \"is_answerable\": false if the documents don't have the answer. If they do, set \"is_answerable\": true and include it in \"answer_content\".",
+      "comments": ""
+    },
+    {
+      "id": 11,
+      "instructions": "As a Data Integration Specialist AI, your primary function is to seamlessly integrate data from various texts, focusing on extracting relevant information to answer intricate questions effectively. You excel at forming concise, fact-based answers from a compilation of detailed documents. Here are several documents, each distinctively marked by triple backticks. Engage with these texts to form a coherent and succinct answer to the given question. Your analysis should strictly use the provided documents as the sole information source.",
+      "output_format": "Mark \"is_answerable\" as false if you can't find the answer in the documents. If the answer is available, set \"is_answerable\" as true and provide it in \"answer_content\".",
+      "comments": ""
+    },
+    {
+      "id": 12,
+      "instructions": "Welcome to your research challenge! Today, you are provided with multiple documents, each enclosed by triple backticks. Your mission is to delve into these texts and uncover the answer to the given question. Remember, your investigation should draw solely from these documents. Happy researching!",
+      "output_format": "Set \"is_answerable\" to false if the answer isn't found in the documents. If it is, set it to true and place the answer in \"answer_content\".",
+      "comments": ""
+    },
+    {
+      "id": 13,
+      "instructions": "Your task is to synthesize information from multiple documents and answer the provided multi-hop question. Carefully read through the documents to extract essential information, connect relevant data points, and arrive at a concise, accurate answer. Base your response solely on the information found in the documents, avoiding any external sources.",
+      "output_format": "If the answer isn't in the provided documents, set \"is_answerable\" to false. If it is, set \"is_answerable\" to true and include it in \"answer_content\".",
+      "comments": ""
+    },
+    {
+      "id": 14,
+      "instructions": "Think of yourself as an evidence collector. Your goal is to navigate through multiple documents and analyze them to deduce the answer to the given question. Examine each document thoroughly, and form a concise and accurate response using information only from the provided texts.",
+      "output_format": "Indicate \"is_answerable\" as false if the documents lack the answer. If they contain it, set \"is_answerable\" as true and provide the answer in \"answer_content\".",
+      "comments": ""
+    },
+    {
+      "id": 15,
+      "instructions": "Your task is to conduct a logical analysis of multiple documents to answer the multi-hop question. Carefully review each document, drawing connections and inferences to synthesize an accurate and concise response. Avoid any external information; your answer should be based solely on the provided texts.",
+      "output_format": "Use \"is_answerable\": false if the answer can't be found in the documents. If it can, use \"is_answerable\": true and provide it in \"answer_content\".",
+      "comments": ""
+    },
+    {
+      "id": 16,
+      "instructions": "You are tasked with solving a multi-layered question using the information provided in multiple documents. Examine each text carefully to find relevant information and connections. Form a concise and well-reasoned response using only the provided documents, without referencing external sources.",
+      "output_format": "If no answer is found in the documents, set \"is_answerable\" to false. If an answer is found, set it to true and include it in \"answer_content\".",
+      "comments": ""
+    },
+    {
+      "id": 17,
+      "instructions": "As an inquiry specialist, your task is to navigate through multiple documents to answer the given question. Scrutinize each text for relevant information, make connections between them, and formulate a concise answer based solely on the provided documents.",
+      "output_format": "Set \"is_answerable\" as false in the output dictionary if the documents don't have the answer. If they do, set \"is_answerable\" as true and provide it in \"answer_content\".",
+      "comments": ""
+    },
+    {
+      "id": 18,
+      "instructions": "Your task is to synthesize data from multiple documents to answer the multi-hop question. Read through the texts carefully, identify key details and themes, and combine them to form a concise response. Ensure your answer is derived solely from the provided documents, avoiding any external sources.",
+      "output_format": "Mark \"is_answerable\" as false if the answer isn't in the documents. If it is, mark \"is_answerable\" as true and include it in \"answer_content\".",
+      "comments": ""
+    },
+    {
+      "id": 19,
+      "instructions": "Approach the question as a detective piecing together evidence from multiple documents. Read each text thoroughly, identify patterns and relationships, and deduce a clear, concise answer. Base your response solely on the provided documents, avoiding any external data.",
+      "output_format": "Set \"is_answerable\" to false if the answer isn't found in the documents. If it is, set it to true and place the answer in \"answer_content\".",
+      "comments": ""
+    },
+    {
+      "id": 20,
+      "instructions": "Your task is to navigate through multiple documents and synthesize information to answer a multi-hop question. Examine each document carefully to identify key details and connections. Form a clear, concise answer using only the provided texts, avoiding any external sources.",
+      "output_format": "Use \"is_answerable\": false in the output dictionary if the answer isn't in the documents. If it is, set \"is_answerable\": true and include the answer in \"answer_content\".\n",
+      "comments": ""
+    }
+  ],
+  "demonstrations": [
+    {
+      "id": 0,
+      "documents": [
+        "Really Big! is the second album by saxophonist Jimmy Heath featuring big band performances recorded in 1960 and originally released on the Riverside label.",
+        "Top and Bottom Brass is an album by trumpeter Clark Terry featuring performances recorded in early 1959 and originally released on the Riverside label.",
+        "The Voice That Is! is an album by American jazz vocalist Johnny Hartman featuring performances recorded in 1964 for the Impulse! label.",
+        "Matador is an album by American jazz trumpeter Kenny Dorham featuring performances recorded in 1962 and released on the United Artists label.",
+        "Arctic Moon later became synonymous with labels such as Armada Music and Aly & Fila’s Future Sound of Egypt Recordings internet radio show. He released singles \"True Romance\" and \"Adelaide\" on the latter label. The tracks peaked on download charts and gained large support from other DJs.",
+        "Bach to the Blues is an album performed by the Ramsey Lewis Trio that was recorded in 1964 and released on the Argo label.",
+        "Waterfalls is a live album by American saxophonist and composer John Klemmer featuring studio enhanced live performances recorded in Los Angeles for the Impulse! label.",
+        "Jamal Plays Jamal is an album by American jazz pianist Ahmad Jamal featuring performances recorded in 1974 and released on the 20th Century label.",
+        "Kelly at Midnight is an album by jazz pianist Wynton Kelly released on the Vee-Jay label featuring performances by Kelly with Paul Chambers, and Philly Joe Jones recorded in 1960.",
+        "Straight No Filter is an album by jazz saxophonist Hank Mobley, recorded mostly in 1963 but not released on the Blue Note label until 1985. The albums compiles performances recorded at four different sessions from 1963 to 1966.",
+        "Grant's First Stand is the debut album by American jazz guitarist Grant Green featuring performances by Green recorded and released on the Blue Note label in 1961. Earlier recordings made by Green for Blue Note were released as \"First Session\" in 2001.",
+        "Easterly Winds is an album by American jazz pianist Jack Wilson featuring performances recorded and released on the Blue Note label in 1967.",
+        "True Game is the debut album by American rapper CJ Mac & producer Mad. It was released May 23, 1995 on Rap-A-Lot Records. The album was produced by CJ Mac & Mad and mixed and engineered by Mike Dean and James Hoover. It peaked at number 41 on the \"Billboard\" Top R&B/Hip-Hop Albums"
+      ],
+      "question": "What is the record label of True Game's performer?",
+      "answer": {
+		  "is_answerable": true,
+		  "answer_content": "Rap-A-Lot"
+	  }
+    },
+    {
+      "id": 1,
+      "documents": [
+        "Goong is a manhwa series by author Park So-hee. It has been adapted into a popular TV drama series of the same name.",
+        "Scorpia Rising is the ninth novel in the \"Alex Rider\" series, written by British author Anthony Horowitz. It was published on 31 March 2011.",
+        "The Shelbourne Ultimatum is a 2012 novel by Irish journalist and author Paul Howard and the twelfth in the Ross O'Carroll-Kelly series.",
+        "Vaillante is a fictional French company of which most of the activity is related to automobile. Vaillante is featured in the French comic book series \"Michel Vaillant\". Vaillante was founded by Henri Vaillant.",
+        "Whispers Under Ground is the third novel in the Rivers of London series by English author Ben Aaronovitch, published 2012 by Gollancz.",
+        "NAMA Mia! is a 2011 novel by Irish journalist and author Paul Howard and the eleventh in the Ross O'Carroll-Kelly series.",
+        "The Hollow Man (2011) is a novel by British author Oliver Harris, the first of a series featuring detective Nick Belsey.",
+        "Michel Vaillant is a French comics series created in 1957 by French cartoonist Jean Graton and published originally by Le Lombard. Later, Graton published the albums by himself when he founded Graton éditeur in 1982. Michel Vaillant is the main character of the eponymous series, a French racing car driver who competes mainly in Formula One.",
+        "Mahmoud Salem (; 1931 - 24 February 2013) was an eminent Egyptian author who was known for children books and mystery series.",
+        "Emily of New Moon is the first in a series of novels by Lucy Maud Montgomery about an orphan girl growing up in Canada.",
+        "Pam Belluck, an American journalist and author, is a health and science writer for \"The New York Times\" and author of the acclaimed nonfiction book \"Island Practice,\" which is in development for a television series.",
+        "He is emeritus professor of architecture of the University of Strathclyde. He writes regularly on architectural and urban history, is author of \"The South Clyde Estuary\", and co-author of \"The North Clyde Estuary\" and \"Central Glasgow\" in the Royal Incorporation of Architects in Scotland series of handbooks on Scottish architecture."
+      ],
+      "question": "Who is the author of the series that include Vaillante?",
+      "answer": {
+		  "is_answerable": true,
+		  "answer_content": "Jean Graton"
+	  }
+    },
+    {
+      "id": 2,
+      "documents": [
+        "897 Lysistrata is a minor planet orbiting the Sun that was discovered by German astronomer Max Wolf on August 3, 1918.",
+        "Montague (minor planet designation: 535 Montague) is a minor planet orbiting the Sun that was discovered by Raymond Smith Dugan on 7 May 1904 in Heidelberg, Germany.",
+        "Peraga (minor planet designation: 554 Peraga) is a minor planet orbiting the Sun that was discovered by German astronomer Paul Götz on January 8, 1905, from Heidelberg.",
+        "669 Kypria is a minor planet orbiting the Sun that was discovered by German astronomer August Kopff on August 20, 1908.",
+        "819 Barnardiana is a minor planet orbiting the Sun, discovered on March 3, 1916 by the German astronomer Max Wolf in Heidelberg.",
+        "880 Herba is a minor planet orbiting the Sun that was discovered by German astronomer Max Wolf on 22 July 1917 in Heidelberg.",
+        "879 Ricarda is a minor planet orbiting the Sun that was discovered by German astronomer Max Wolf on July 22, 1917.",
+        "631 Philippina is a minor planet orbiting the Sun that was discovered by German astronomer August Kopff on March 21, 1907.",
+        "Senta (minor planet designation: 550 Senta) is a minor planet orbiting the Sun that was discovered by German astronomer Max Wolf on November 16, 1904, from Heidelberg.",
+        "902 Probitas is a minor planet orbiting the Sun. It was discovered by an Austrian astronomer Johann Palisa in Vienna on 3 September 1918.",
+        "975 Perseverantia is a minor planet orbiting the Sun that was discovered by Austrian astronomer Johann Palisa on 27 March 1922.",
+        "Charlotte (minor planet designation: 543 Charlotte) is a minor planet orbiting the Sun. It was discovered by Paul Götz on September 11, 1904 in Heidelberg.",
+        "860 Ursina is a minor planet orbiting the Sun that was discovered in 1917 by German astronomer Max Wolf. The origin of the name is unknown.",
+        "Preziosa (minor planet designation: 529 Preziosa) is a minor planet orbiting the Sun that was discovered by German astronomer Max Wolf on 20 March 1904 from Heidelberg."
+      ],
+      "question": "What university did the scientist who discovered the planets orbit around the sun attend?",
+      "answer": {
+		  "is_answerable": true,
+		  "answer_content": "Heidelberg"
+	  }
+    },
+    {
+      "id": 3,
+      "documents": [
+        "The Gove Dam is an embankment dam on the Kunene River about south of Huambo in Huambo Province, Angola. The purpose of the dam is to control floods and generate hydroelectric power.",
+        "Boca a boca (released in English as Mouth to Mouth) is a 1995 Spanish film directed by Manuel Gómez Pereira. The film was released by Miramax in the United States.",
+        "After the World cup he returned to his home state where he finished his football career 1932 with his original club Guarani FC in Alegrete.",
+        "In 1842, when a two - story brick depot was built, the locals asked that the settlement of Terminus be called Lumpkin, after Governor Wilson Lumpkin. ",
+        "Cacequi is a municipality in the state of Rio Grande do Sul, Brazil, 407 km from Porto Alegre. As of 2004 its population was estimated at 15,599. The town is situated at an altitude of 103 m, with an area of 2,441 km², and is known as the \"capital of the watermelon\".",
+        "António Júlio da Costa Pereira de Eça (Lisbon, 31 March, 1852 — 6 November 1917) - commonly known as Pereira d'Eça - was a general of the Portuguese Army, a colonial administrator colonial and minister of War (1914-1915).",
+        "Ludovino Darío Espínola Alegre, known simply as Darío Espínola, (born 15 September 1973) is an Argentine football defender currently playing for Defensa y Justicia in the Argentine second division.",
+        "Edgar Wilson Benyon (29 March 1901–14 September 1978) was a New Zealand magician, juggler and entertainer. He was born in Auckland, New Zealand on 29 March 1901.",
+        "Aexpa S.A. is a charter airline based at Matecaña International Airport in Pereira, Colombia. The airline was founded in May 2001.",
+        "Felipe Ely Klein (born April 9, 1987 in Porto Alegre) is a Brazilian footballer currently playing for Cerro of the Uruguayan Primera División.",
+        "Wilson Edgar Pereira Alegre (born July 22, 1984 in Huambo) is an Angolan football goalkeeper who currently plays for Libolo."
+      ],
+      "question": "Wilson Edgar Pereira Alegre's birthplace is the capital of what province?",
+      "answer": {
+		  "is_answerable": true,
+		  "answer_content": "Huambo Province"
+	  }
+    },
+    {
+      "id": 4,
+      "documents": [
+		"``Every Little Thing U Do ''is a song by American R&B artist Christopher Williams recorded for his second album Changes (1992). The song was released as the album's third single in March 1993.",
+		"She's Crazy for Leavin' is a song co-written and recorded by American country music artist Rodney Crowell.",
+		"That Most Important Thing: Love (original French title: L'important c'est d'aimer) is a French film directed by Polish filmmaker Andrzej Żuławski. It tells the story of a passionate love relationship between Nadine Chevalier, a B-List actress (Romy Schneider) and Servais Mont, a photographer (Fabio Testi) in the violent and unforgiving French show business.",
+		"That's the Thing About Love is a song written by Richard Leigh and Gary Nicholson, and recorded by American country music artist Don Williams. It was released in March 1984 as the first single from the album Cafe Carolina. That's the Thing About Love was Don Williams sixteenth number one on the country chart. The single stayed at number one for a week and spent a total of thirteen weeks on the chart.",
+		"A Thing Called Love is the 39th overall album by country singer Johnny Cash, released on Columbia Records in 1972 (see 1972 in music). The title song, written by Jerry Reed, was released successfully as a single (with Daddy as the B-side, as yet unavailable on CD), reaching No. 2 on the country charts; two more singles charted as well, while the album itself also reached No. 2 on the country album charts.",
+		"Pamela Uschuk is an American poet, and 2011 Visiting Poet at University of Tennessee. She won a 2010 American Book Award, for Crazy Love: New Poems.",
+		"Thing T. Thing, often referred to as just Thing, is a fictional character in The Addams Family series. Thing was originally conceived as a whole creature (always seen in the background watching the family) that was too horrible to see in person."
+      ],
+      "question": "What year did the writer of Crazy Little Thing Called Love die?",
+      "answer": {
+		  "is_answerable": false,
+		  "answer_content": "Huambo Province"
+	  }
+    }
+  ]
+}

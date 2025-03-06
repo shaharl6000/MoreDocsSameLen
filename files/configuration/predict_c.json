@@ -1,0 +1,10 @@
+{
+  "out_dir": "/cs/labs/tomhope/nirm/MusiQue/out_new/",
+  "run_name": "base",
+  "datasets_pickle_path": "/cs/labs/tomhope/nirm/MusiQue/pkl_files/datasets_baselineSet.pkl",
+  "override": false,
+  "truncation_strategy": "max",
+  "max_num_tokens": null,
+  "batch_size": 2,
+  "temperature": 0.8
+}
