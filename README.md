@@ -1,9 +1,7 @@
 <div align="center">
   <h1>More Documents, Same Length:<br>Isolating the Challenge of Multiple Documents in RAG</h1>
-  <h3>Link to arxiv</h3>
+  <h3><a href="https://arxiv.org/abs/2503.04388" target="_blank">Link to arXiv</a></h3>
 </div>
-
-MoreDocs is a toolset for studying how the number of documents affects Retrieval-Augmented Generation (RAG) performance when the total amount of tokens stays the same.
 
 This repository contains code and datasets for our paper on the effects of document multiplicity while the context size is fixed in Retrieval-Augmented Generation (RAG) systems.
 For detailed methodology, experiments, and analysis, please refer to the full paper 📰
@@ -41,13 +39,14 @@ Alternatively, regenerate them using  [`scripts/create_various_sets.py`](scripts
 ### Prepare the environment
 
 To set up the running environment, run the following command:
-```bash
-git clone git@github.cs.huji.ac.il:lihish400-1/CATBM.git
-cd CATBM
+```
+git clone https://github.com/shaharl6000/MoreDocumentsSameLength.git
+cd MoreDocumentsSameLength
 export PYTHONPATH=./
-python3.11 -m venv <PATH_TO_VENV>
-source <PATH_TO_VENV>/bin/activate
+python3.11 -m venv venv
+source venv/bin/activate
 pip install -r requirements.txt
+
 ```
 
 ### Run predictions
@@ -84,11 +83,14 @@ python scripts/evaluate_dataset.py --predictions_dir <OUTPUT_PATH_FROM_PREV_STEP
 If you use this code or the datasets in your research, please cite:
 
 ```
-@inproceedings{author2024more,
-  title={More Documents, Same Length: Isolating the Challenge of Multiple Documents in RAG},
-  author={Author, A. and Author, B.},
-  booktitle={Proceedings of ACL 2024},
-  year={2024}
+@misc{levy2025documentslengthisolatingchallenge,
+      title={More Documents, Same Length: Isolating the Challenge of Multiple Documents in RAG}, 
+      author={Shahar Levy and Nir Mazor and Lihi Shalmon and Michael Hassid and Gabriel Stanovsky},
+      year={2025},
+      eprint={2503.04388},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2503.04388}, 
 }
 ```
 
