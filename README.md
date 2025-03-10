@@ -40,7 +40,7 @@ Alternatively, regenerate them using  [`scripts/create_various_sets.py`](scripts
 
 To set up the running environment, run the following command:
 ```
-git clone https://github.com/shaharl6000/MoreDocumentsSameLength.git
+gh repo clone shaharl6000/MoreDocumentsSameLength
 cd MoreDocumentsSameLength
 export PYTHONPATH=./
 python3.11 -m venv venv
