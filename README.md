@@ -33,15 +33,16 @@ We began with 20 documents, then omitted redundant ones while lengthening the re
 
 ### Download the different benchmark datasets
 Our custom benchmark datasets include a control set, the original dataset, and variants with replaced distractors for varying document multiplicity. 
-You can Download them from  [here](https://drive.google.com/file/d/1z6L0Xl0zhRoOOpwD5WuQI9ukSaEgCraM/view?usp=drive_link)
+You can Download them from  [here](https://drive.google.com/file/d/1z6L0Xl0zhRoOOpwD5WuQI9ukSaEgCraM/view?usp=drive_link), or from [Hugging Face](https://huggingface.co/datasets/Shahar6000/MoreDocsSameLen).
+
 Alternatively, regenerate them using  [`scripts/create_various_sets.py`](scripts/create_various_sets.py).
 
 ### Prepare the environment
 
 To set up the running environment, run the following command:
 ```
-gh repo clone shaharl6000/MoreDocumentsSameLength
-cd MoreDocumentsSameLength
+gh repo clone shaharl6000/MoreDocsSameLen
+cd MoreDocsSameLen
 export PYTHONPATH=./
 python3.11 -m venv venv
 source venv/bin/activate
